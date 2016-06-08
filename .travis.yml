@@ -1,0 +1,9 @@
+sudo: false
+language: ruby
+rvm:
+  - 2.2.5
+  - 2.3.1
+before_script:
+  - "ruby lib/initial_setup.rb ../.travis_setup"
+  - "psql -c 'create database bsrc_test;' -U postgres"
+  - "rails db:migrate"

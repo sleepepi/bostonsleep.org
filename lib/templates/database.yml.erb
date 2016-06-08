@@ -1,0 +1,32 @@
+# PostgreSQL. Versions 9.1 and up are supported.
+
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  # For details on connection pooling, see rails configuration guide
+  # http://guides.rubyonrails.org/configuring.html#database-pooling
+  pool: <%%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: bsrc_development
+  username: <%= print "Enter Database Username: "; u = gets.chomp(); u %>
+  <%= print "Enter Database Password: "; p = gets.chomp(); if p == '' then p = '# password:' else p = "password: #{p}" end; p %>
+  <%= print "Enter Database Host: "; h = gets.chomp(); if h == '' then h = '# host:' else h = "host: #{h}" end; h %>
+
+# Warning: The database defined as "test" will be erased and
+# re-generated from your development database when you run "rake".
+# Do not set this db to the same as development or production.
+test:
+  <<: *default
+  database: bsrc_test
+  username: <%= u %>
+  <%= p %>
+  <%= h %>
+
+production:
+  <<: *default
+  database: bsrc_production
+  username: <%= u %>
+  <%= p %>
+  <%= h %>
