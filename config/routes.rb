@@ -5,5 +5,6 @@ Rails.application.routes.draw do
 
   scope module: 'external' do
     get :home
+    get :version
   end
 end
