@@ -29,10 +29,9 @@
     = stylesheet_link_tag 'application', media: 'all', data: { turbolinks_track: 'reload' }
     = javascript_include_tag 'application', data: { turbolinks_track: 'reload' }
     = javascript_tag "var root_url='#{request.script_name + '/'}';"
-  %body{ class: @body_class }
+  %body#myPage{ class: @body_class, data: { spy: 'scroll', target: '.navbar', offset: '60' } }
     = yield :header
 
-    .container
-      = yield
+    = yield
 
     = yield :footer
