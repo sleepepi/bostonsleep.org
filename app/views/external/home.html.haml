@@ -1,277 +1,228 @@
 - @body_class = 'b-body'
 
-%nav.navbar.navbar-default.navbar-fixed-top
-  .container
-    .navbar-header
-      %button.navbar-toggle{"data-target" => "#myNavbar", "data-toggle" => "collapse", :type => "button"}
-        %span.icon-bar
-        %span.icon-bar
-        %span.icon-bar
-      %a.navbar-brand{:href => "#myPage"} Logo
-    #myNavbar.collapse.navbar-collapse
-      %ul.nav.navbar-nav.navbar-right
-        %li
-          %a{:href => "#about"} ABOUT
-        %li
-          %a{:href => "#services"} SERVICES
-        %li
-          %a{:href => "#research"} RESEARCH
-        %li
-          %a{:href => "#pricing"} PRICING
-        %li
-          %a{:href => "#contact"} CONTACT
+= render 'layouts/slide_menu'
 
 .jumbotron.text-center
   %h1 Boston Sleep
   %p We specialize in reading physiological data.
-  %form.form-inline
-    %input.form-control{:placeholder => "Email Address", :required => "", :size => "50", :type => "email"}
-      %button.btn.btn-primary{:type => "button"} Subscribe
 
-/ Container (About Section)
 #about.container
   .row
     .col-sm-8
       %h2 About Boston Sleep Reading Center
       %br
-        %h4
-          We strive to provide you the best service for reading physiological data.
-          With a dedicated team of polysomnologists and a history of scoring over
-          50,000 sleep studies, you will receive scored data that will be used by
-          fellow researchers in the years to come.
-        %br
-          %p
-            The Boston Sleep Reading Center (BSRC), housed in the Division of Sleep and Circadian Disorders at Brigham and Women’s Hospital in Boston, Massachusetts, provides high-quality and reliable analysis of physiological data to support industry funded and observational studies, equipment validation projects, pharmacological studies, comparative effectiveness research and clinical trials. Areas of expertise include polysomnography, actigraphy, oximetry, quantitative EEG analysis and more. The SRC provides comprehensive equipment certification services, protocol development and standardization, quality control monitoring, and staff training and certification services. The SRC also contains a Statistical Core that can provide statistical analysis support and an Informatics and Data Management Core that develops highly interactive tools capable of supporting multicenter studies, clinical trials and data repositories. The program includes a staff of approximately 30 individuals, including epidemiologists, biostatisticians, informaticians, clinicians, data managers, research assistants and study coordinators.
-          %br
-            %button.btn.btn-default.btn-lg Get in Touch
+      %h4
+        We strive to provide you the best service for reading physiological data.
+        With a dedicated team of polysomnologists and a history of scoring over
+        50,000 sleep studies, you will receive scored data that will be used by
+        fellow researchers in the years to come.
+      %br
+      %p
+        The Boston Sleep Reading Center (BSRC), housed in the Division of Sleep and Circadian Disorders at Brigham and Women’s Hospital in Boston, Massachusetts, provides high-quality and reliable analysis of physiological data to support industry funded and observational studies, equipment validation projects, pharmacological studies, comparative effectiveness research and clinical trials. Areas of expertise include polysomnography, actigraphy, oximetry, quantitative EEG analysis and more. The SRC provides comprehensive equipment certification services, protocol development and standardization, quality control monitoring, and staff training and certification services. The SRC also contains a Statistical Core that can provide statistical analysis support and an Informatics and Data Management Core that develops highly interactive tools capable of supporting multicenter studies, clinical trials and data repositories. The program includes a staff of approximately 30 individuals, including epidemiologists, biostatisticians, informaticians, clinicians, data managers, research assistants and study coordinators.
+      %br
+      = link_to 'Get in Touch', '#contact', class: 'btn btn-default btn-lg', data: { object: 'scroll-anchor' }
+      %br
+      %br
     .col-sm-4
+      .hidden-xs{ style: 'height: 122px'}
       %span.glyphicon.glyphicon-signal.logo
 .bg-grey
   .container
     .row
-      .col-sm-4
-        %div{ style: 'margin-top: 40px' }
-          %span.glyphicon.glyphicon-globe.logo.slideanim
-      .col-sm-8
+      .col-sm-8.col-sm-push-4
         %h2 Our Values
         %br
-          %h4
-            %strong MISSION:
-            Our mission
-          %br
-            %p
-              %strong VISION:
-              Our vision
+        %h4
+          %strong MISSION:
+          Our mission
+        %br
+        %p
+          %strong VISION:
+          Our vision
 
-            %p
-              The BSRC is directed by Dr. Susan Redline, Farrell Professor of Sleep Medicine at Harvard Medical School and Director for the Programs in Sleep and Cardiovascular Medicine and Sleep Medicine Epidemiology at Brigham and Women’s Hospital and Beth Israel Deaconess Medical Center. She is an internationally recognized researcher focusing on understanding the risk factors and treatment outcomes of sleep disorders. Dr. Redline has published more than 200 scientific articles and participates in many national organizations involved in setting policies for sleep medicine practice and research.
+        %p
+          The BSRC is directed by Dr. Susan Redline, Farrell Professor of Sleep Medicine at Harvard Medical School and Director for the Programs in Sleep and Cardiovascular Medicine and Sleep Medicine Epidemiology at Brigham and Women’s Hospital and Beth Israel Deaconess Medical Center. She is an internationally recognized researcher focusing on understanding the risk factors and treatment outcomes of sleep disorders. Dr. Redline has published more than 200 scientific articles and participates in many national organizations involved in setting policies for sleep medicine practice and research.
+        %br
+        %br
+      .col-sm-4.col-sm-pull-8
+        .hidden-xs{ style: 'height: 122px'}
+        %span.glyphicon.glyphicon-heart-empty.logo.slideanim
 
-/ Container (Services Section)
 #services.container.text-center
   %h2 SERVICES
   %h4 What we offer
   %br
-    .row.slideanim
-      .col-sm-4
-        %span.glyphicon.glyphicon-off.logo-small
-        %h4 POWER
-        %p Lorem ipsum dolor sit amet..
-      .col-sm-4
-        %span.glyphicon.glyphicon-heart.logo-small
-        %h4 LOVE
-        %p Lorem ipsum dolor sit amet..
-      .col-sm-4
-        %span.glyphicon.glyphicon-lock.logo-small
-        %h4 JOB DONE
-        %p Lorem ipsum dolor sit amet..
-    %br
-      %br
-        .row.slideanim
-          .col-sm-4
-            %span.glyphicon.glyphicon-leaf.logo-small
-            %h4 GREEN
-            %p Lorem ipsum dolor sit amet..
-          .col-sm-4
-            %span.glyphicon.glyphicon-certificate.logo-small
-            %h4 CERTIFIED
-            %p Lorem ipsum dolor sit amet..
-          .col-sm-4
-            %span.glyphicon.glyphicon-wrench.logo-small
-            %h4{:style => "color:#303030;"} HARD WORK
-            %p Lorem ipsum dolor sit amet..
+  .row.slideanim
+    .col-sm-4
+      %span.glyphicon.glyphicon-bed.logo-small
+      %h4 POLYSOMNOGRAPHY SCORING
+      %p
+        Your data will be scored by our highly trained and certified staff of
+        registered polysomnographists.
+    .col-sm-4
+      %span.glyphicon.glyphicon-tasks.logo-small
+      %h4 DATA MANAGEMENT
+      %p
+        We'll provide you with real-time updates and reports as we process your
+        data.
+    .col-sm-4
+      %span.glyphicon.glyphicon-lock.logo-small
+      %h4 SECURE TRANSFER
+      %p
+        We will provide you with tools so that you can easily send us data that
+        is encrypted and protected.
+  %br
+  %br
 
 / Container (Portfolio Section)
-#research.text-center.bg-grey
+#research.text-center.bg-grey{ style: 'padding-bottom: 100px' }
   .container
     %h2 Research
+    %h4 Past Studies and Collaborations
     %br
-      %h4 Past Studies and Collaborations
+    %p The Boston Sleep Reading Center has worked on numerous National Heart, Blood, and Lung Institute (NHLBI) funded cohort studies over the past 20 years. A selection of these include:
 
-      %p The Boston Sleep Reading Center has worked on numerous National Heart, Blood, and Lung Institute (NHLBI) funded cohort studies over the past 20 years. A selection of these include:
+    %br
+    %br
 
-      .row.text-center.slideanim
-        .col-sm-4
-          .thumbnail
-            = image_tag 'shhs_logo.png', alt: 'Sleep Heart Health Study', style: 'max-width:100%;'
+    .row.text-center.slideanim
+      .col-sm-4
+        .thumbnail
+          = image_tag 'shhs_logo.png', alt: 'Sleep Heart Health Study', style: 'max-width:100%;'
+          %p
+            %strong SHHS
+          %p 5,000+ studies scored SHHS
+      .col-sm-4
+        .thumbnail
+          = image_tag 'heartbeat-logo.png', alt: 'HeartBEAT', style: 'max-width:100%;'
+          %p
+            %strong HeartBEAT
+          %p 500+ studies scored HeartBEAT
+      .col-sm-4
+        .thumbnail
+          = image_tag 'bestair_logo.png', alt: 'BestAIR', style: 'max-width:100%;'
+          %p
+            %strong BestAIR
+          %p 2,000 studies scored BestAIR
+    - if false
+      %br
+      %h2 What our customers say
+      #myCarousel.carousel.slide.text-center{"data-ride" => "carousel"}
+        / Indicators
+        %ol.carousel-indicators
+          %li.active{"data-slide-to" => "0", "data-target" => "#myCarousel"}
+          %li{"data-slide-to" => "1", "data-target" => "#myCarousel"}
+          %li{"data-slide-to" => "2", "data-target" => "#myCarousel"}
+        / Wrapper for slides
+        .carousel-inner{ role: "listbox"}
+          .item.active
+            %h4
+              "This company is the best. I am so happy with the result!"
+              %br
+                %span{ style: 'font-style:normal;' } Michael Roe, Vice President, Comment Box
+          .item
+            %h4
+              "One word... WOW!!"
+              %br
+                %span{ style: 'font-style:normal;' } John Doe, Salesman, Rep Inc
+          .item
+            %h4
+              "Could I... BE any more happy with this company?"
+              %br
+                %span{ style: 'font-style:normal;' } Chandler Bing, Actor, FriendsAlot
+        / Left and right controls
+        %a.left.carousel-control{"data-slide" => "prev", :href => "#myCarousel", :role => "button"}
+          %span.glyphicon.glyphicon-chevron-left{"aria-hidden" => "true"}
+          %span.sr-only Previous
+        %a.right.carousel-control{"data-slide" => "next", :href => "#myCarousel", :role => "button"}
+          %span.glyphicon.glyphicon-chevron-right{"aria-hidden" => "true"}
+          %span.sr-only Next
+
+- if false
+  / Container (Pricing Section)
+  #pricing.container
+    .text-center
+      %h2 Pricing
+      %h4 Choose a payment plan that works for you
+    .row.slideanim
+      .col-sm-4.col-xs-12
+        .panel.panel-default.text-center
+          .panel-heading
+            %h1 Basic
+          .panel-body
             %p
-              %strong SHHS
-            %p 5,000+ studies scored SHHS
-        .col-sm-4
-          .thumbnail
-            = image_tag 'heartbeat-logo.png', alt: 'HeartBEAT', style: 'max-width:100%;'
+              %strong 20
+              Lorem
             %p
-              %strong HeartBEAT
-            %p 500+ studies scored HeartBEAT
-        .col-sm-4
-          .thumbnail
-            = image_tag 'bestair_logo.png', alt: 'BestAIR', style: 'max-width:100%;'
+              %strong 15
+              Ipsum
             %p
-              %strong BestAIR
-            %p 2,000 studies scored BestAIR
-      - if false
-        %br
-          %h2 What our customers say
-          #myCarousel.carousel.slide.text-center{"data-ride" => "carousel"}
-            / Indicators
-            %ol.carousel-indicators
-              %li.active{"data-slide-to" => "0", "data-target" => "#myCarousel"}
-              %li{"data-slide-to" => "1", "data-target" => "#myCarousel"}
-              %li{"data-slide-to" => "2", "data-target" => "#myCarousel"}
-            / Wrapper for slides
-            .carousel-inner{:role => "listbox"}
-              .item.active
-                %h4
-                  "This company is the best. I am so happy with the result!"
-                  %br
-                    %span{:style => "font-style:normal;"} Michael Roe, Vice President, Comment Box
-              .item
-                %h4
-                  "One word... WOW!!"
-                  %br
-                    %span{:style => "font-style:normal;"} John Doe, Salesman, Rep Inc
-              .item
-                %h4
-                  "Could I... BE any more happy with this company?"
-                  %br
-                    %span{:style => "font-style:normal;"} Chandler Bing, Actor, FriendsAlot
-            / Left and right controls
-            %a.left.carousel-control{"data-slide" => "prev", :href => "#myCarousel", :role => "button"}
-              %span.glyphicon.glyphicon-chevron-left{"aria-hidden" => "true"}
-              %span.sr-only Previous
-            %a.right.carousel-control{"data-slide" => "next", :href => "#myCarousel", :role => "button"}
-              %span.glyphicon.glyphicon-chevron-right{"aria-hidden" => "true"}
-              %span.sr-only Next
+              %strong 5
+              Dolor
+            %p
+              %strong 2
+              Sit
+            %p
+              %strong Endless
+              Amet
+          .panel-footer
+            %h3 $19
+            %h4 per month
+            %button.btn.btn-lg Sign Up
+      .col-sm-4.col-xs-12
+        .panel.panel-default.text-center
+          .panel-heading
+            %h1 Pro
+          .panel-body
+            %p
+              %strong 50
+              Lorem
+            %p
+              %strong 25
+              Ipsum
+            %p
+              %strong 10
+              Dolor
+            %p
+              %strong 5
+              Sit
+            %p
+              %strong Endless
+              Amet
+          .panel-footer
+            %h3 $29
+            %h4 per month
+            %button.btn.btn-lg Sign Up
+      .col-sm-4.col-xs-12
+        .panel.panel-default.text-center
+          .panel-heading
+            %h1 Premium
+          .panel-body
+            %p
+              %strong 100
+              Lorem
+            %p
+              %strong 50
+              Ipsum
+            %p
+              %strong 25
+              Dolor
+            %p
+              %strong 10
+              Sit
+            %p
+              %strong Endless
+              Amet
+          .panel-footer
+            %h3 $49
+            %h4 per month
+            %button.btn.btn-lg Sign Up
 
-/ Container (Pricing Section)
-#pricing.container
-  .text-center
-    %h2 Pricing
-    %h4 Choose a payment plan that works for you
-  .row.slideanim
-    .col-sm-4.col-xs-12
-      .panel.panel-default.text-center
-        .panel-heading
-          %h1 Basic
-        .panel-body
-          %p
-            %strong 20
-            Lorem
-          %p
-            %strong 15
-            Ipsum
-          %p
-            %strong 5
-            Dolor
-          %p
-            %strong 2
-            Sit
-          %p
-            %strong Endless
-            Amet
-        .panel-footer
-          %h3 $19
-          %h4 per month
-          %button.btn.btn-lg Sign Up
-    .col-sm-4.col-xs-12
-      .panel.panel-default.text-center
-        .panel-heading
-          %h1 Pro
-        .panel-body
-          %p
-            %strong 50
-            Lorem
-          %p
-            %strong 25
-            Ipsum
-          %p
-            %strong 10
-            Dolor
-          %p
-            %strong 5
-            Sit
-          %p
-            %strong Endless
-            Amet
-        .panel-footer
-          %h3 $29
-          %h4 per month
-          %button.btn.btn-lg Sign Up
-    .col-sm-4.col-xs-12
-      .panel.panel-default.text-center
-        .panel-heading
-          %h1 Premium
-        .panel-body
-          %p
-            %strong 100
-            Lorem
-          %p
-            %strong 50
-            Ipsum
-          %p
-            %strong 25
-            Dolor
-          %p
-            %strong 10
-            Sit
-          %p
-            %strong Endless
-            Amet
-        .panel-footer
-          %h3 $49
-          %h4 per month
-          %button.btn.btn-lg Sign Up
+= render 'external/contact'
 
-/ Container (Contact Section)
-#contact.bg-grey{ style: 'margin-bottom: 20px' }
+%footer.text-center{ style: 'margin-top: 50px' }
   .container
-    %h2.text-center CONTACT
-    .row
-      .col-sm-5
-        %p Contact us and we'll get back to you within 24 hours.
-        %p
-          %span.glyphicon.glyphicon-map-marker
-          Boston, US
-        %p
-          %span.glyphicon.glyphicon-phone
-          857.307.0352
-        %p
-          %span.glyphicon.glyphicon-envelope
-          support@bostonsleep.org
-      .col-sm-7.slideanim
-        .row
-          .col-sm-6.form-group
-            %input#name.form-control{:name => "name", :placeholder => "Name", :required => "", :type => "text"}
-          .col-sm-6.form-group
-            %input#email.form-control{:name => "email", :placeholder => "Email", :required => "", :type => "email"}
-        %textarea#comments.form-control{:name => "comments", :placeholder => "Comment", :rows => "5"}
-        %br
-          .row
-            .col-sm-12.form-group
-              %button.btn.btn-default.pull-right{:type => "submit"} Send
-
-%footer.text-center
-  .container
-    %a{:href => "#myPage", :title => "To Top"}
+    = link_to '#top', title: 'To Top' do
       %span.glyphicon.glyphicon-chevron-up
     %p
       Boston Sleep Reading Center &copy;

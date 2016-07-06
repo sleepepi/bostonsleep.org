@@ -1,0 +1,14 @@
+%nav.navbar.navbar-default.navbar-fixed-top
+  .container
+    .navbar-header
+      %button.navbar-toggle{ type: 'button', data: { target: '#myNavbar', toggle: 'collapse' } }
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      = link_to 'Boston Sleep', root_path, class: 'navbar-brand'
+    #myNavbar.collapse.navbar-collapse
+      %ul.nav.navbar-nav.navbar-right
+        %li= link_to 'ABOUT', root_path(anchor: 'about')
+        %li= link_to 'SERVICES', root_path(anchor: 'services')
+        %li= link_to 'RESEARCH', root_path(anchor: 'research')
+        %li= link_to 'CONTACT', root_path(anchor: 'contact')

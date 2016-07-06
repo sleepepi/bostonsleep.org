@@ -9,6 +9,16 @@ class ExternalControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
+  test 'should get contact' do
+    get contact_url
+    assert_response :success
+  end
+
+  test 'should get thanks' do
+    get thanks_url
+    assert_response :success
+  end
+
   test 'should get version' do
     get version_url
     assert_response :success
