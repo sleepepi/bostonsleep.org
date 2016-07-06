@@ -1,6 +1,15 @@
 @bReady = ->
   # Add smooth scrolling to all links in navbar + footer link
-  $('.navbar a, footer a[href=\'#top\'], [data-object~=scroll-anchor]').on 'click', (event) ->
+  $(window).on('scroll', ->
+    $('.slideanim').each ->
+      pos = $(this).offset().top
+      winTop = $(window).scrollTop()
+      if pos < winTop + 1000
+        $(this).addClass 'slide'
+  )
+
+$(document)
+  .on('click', '.navbar a, footer a[href=\'#top\'], [data-object~=scroll-anchor]', (event) ->
     # Make sure this.hash has a value before overriding default behavior
     if @hash != '' and $(@hash).length > 0
       # Prevent default anchor click behavior
@@ -12,14 +21,4 @@
       $('html, body').animate { scrollTop: $(hash).offset().top }, 900, ->
         # Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash
-        return
-    return
-  $(window).scroll ->
-    $('.slideanim').each ->
-      pos = $(this).offset().top
-      winTop = $(window).scrollTop()
-      if pos < winTop + 1000
-        $(this).addClass 'slide'
-      return
-    return
-  return
+  )
