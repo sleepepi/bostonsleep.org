@@ -21,7 +21,7 @@
       %meta{ itemprop: 'image', content: ENV['website_url'] + '/assets/' + asset_path('logo.png').split('/assets/').last }
 
     %title
-      = [@title, 'Boston Sleep'].compact.join(' - ').html_safe
+      = [@title, ENV['website_name']].compact.join(' - ').html_safe
 
     = favicon_link_tag
     = csrf_meta_tags

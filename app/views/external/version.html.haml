@@ -1,3 +1,10 @@
-%h1 Version
+- @title = 'Version'
+- @body_class = 'b-body'
 
-%p= BostonSleepOrg::VERSION::STRING
+= render 'layouts/menu'
+
+.jumbotron.text-center
+  %h1 Boston Sleep
+  %p= BostonSleepOrg::VERSION::STRING
+
+= render 'layouts/footer'
