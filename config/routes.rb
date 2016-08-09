@@ -12,4 +12,6 @@ Rails.application.routes.draw do
     post :submit_contact
     get :thanks
   end
+
+  get 'sitemap.xml.gz' => 'external#sitemap_xml', as: :sitemap_xml
 end

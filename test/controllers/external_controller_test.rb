@@ -19,8 +19,30 @@ class ExternalControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
+  test 'should submit contact' do
+    post submit_contact_url, params: {
+      name: 'Name', email: 'email@example.com',
+      comments: "Hi\nThis is my message.\nThanks!"
+    }
+    assert_redirected_to thanks_path
+  end
+
+  test 'should not submit contact without required fields' do
+    post submit_contact_url, params: {
+      name: '', email: 'email@example.com',
+      comments: "Hi\nThis is my message.\nThanks!"
+    }
+    assert_template 'contact'
+    assert_response :success
+  end
+
   test 'should get thanks' do
     get thanks_url
+    assert_response :success
+  end
+
+  test 'should get sitemap xml file' do
+    get sitemap_xml_url
     assert_response :success
   end
 

@@ -10,10 +10,12 @@ gem 'pg',                   '0.18.4'
 # Gems used by project
 gem 'devise',               '~> 4.2.0'
 gem 'kaminari',             '~> 0.17.0'
+gem 'carrierwave',          '~> 0.11.2'
 gem 'figaro',               '~> 1.1.1'
 gem 'bootstrap-sass',       '~> 3.3.6'
 gem 'haml',                 '~> 4.0.6'
 gem 'redcarpet',            '~> 3.3.4'
+gem 'sitemap_generator',    '~> 5.1.0'
 
 # Rails Defaults
 gem 'coffee-rails',         '~> 4.2'
