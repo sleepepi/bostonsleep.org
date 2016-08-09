@@ -4,9 +4,19 @@
   // margin-bottom: 20px;
   padding: 20px;
 
+  .publication-title {
+    color: $text-color;
+    font-weight: bold;
+  }
+
   &:nth-child(even) {
-    color: white;
+    color: $brand-gray;
     background-color: $color-primary-1;
     border-left: 2px solid $brand-primary;
+
+    .publication-title {
+      color: $brand-white;
+      font-weight: bold;
+    }
   }
 }

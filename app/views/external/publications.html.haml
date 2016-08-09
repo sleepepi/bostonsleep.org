@@ -8,6 +8,9 @@
 
 .container.col-buffer
   - PUBLICATIONS.each do |publication|
-    .publication= apply_markdown publication
+    .publication
+      .publication-title= publication['title']
+      = publication['authors']
+      .publication-links= apply_markdown publication['links']
 
 = render 'layouts/footer'
