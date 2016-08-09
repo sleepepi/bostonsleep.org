@@ -18,7 +18,7 @@
 // $gray-light:             lighten(#070, 46.7%) !default; // #777
 // $gray-lighter:           lighten(#070, 93.5%) !default; // #eee
 
-// $brand-primary:         #428bca !default;
+$brand-primary:         $color-primary-0;
 // $brand-success:         #5cb85c !default;
 // $brand-info:            #5bc0de !default;
 // $brand-warning:         #f0ad4e !default;
@@ -38,7 +38,7 @@ $brand-black:           #333;
 // $text-color:            $gray-dark !default;
 
 // //** Global textual link color.
-// $link-color:            $brand-primary !default;
+$link-color:            lighten($brand-primary, 15%);
 // //** Link hover color set via `darken()` function.
 // $link-hover-color:      darken($link-color, 15%) !default;
 
@@ -196,7 +196,7 @@ $font-size-base:          16px; // 14px !default;
 // //** `<input>` border radius
 // $input-border-radius:            $border-radius-base !default;
 // //** Border color for inputs on focus
-// $input-border-focus:             #66afe9 !default;
+$input-border-focus:             $brand-primary;
 
 // //** Placeholder text color
 // $input-color-placeholder:        $gray-light !default;

@@ -1,4 +1,4 @@
-#contact{ style: 'margin-bottom: 20px' }
+#contact.col-buffer
   .container
     - if current_page?(root_path)
       %h2.text-center CONTACT
@@ -14,7 +14,7 @@
         %p
           %span.glyphicon.glyphicon-envelope.logo-color
           support@bostonsleep.org
-      .col-sm-7{ class: current_page?(root_path) ? 'slideanim' : nil }
+      .col-sm-7
         = form_tag submit_contact_path, method: :post do
           - unless current_page?(root_path)
             %strong

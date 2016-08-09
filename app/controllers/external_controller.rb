@@ -7,6 +7,9 @@ class ExternalController < ApplicationController
   def home
   end
 
+  def publications
+  end
+
   def thanks
   end
 

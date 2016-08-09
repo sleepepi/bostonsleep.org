@@ -1,26 +1,3 @@
-$color-primary-0: #2E4272;  // Main Primary color */
-$color-primary-1: #7887AB;
-$color-primary-2: #4F628E;
-$color-primary-3: #162955;
-$color-primary-4: #061539;
-
-$color-secondary-1-0: #AA9639;  // Main Secondary color (1) */
-$color-secondary-1-1: #FFF0AA;
-$color-secondary-1-2: #D4C26A;
-$color-secondary-1-3: #806D15;
-$color-secondary-1-4: #554600;
-
-$color-secondary-2-0: #AA6C39;  // Main Secondary color (2) */
-$color-secondary-2-1: #FFD1AA;
-$color-secondary-2-2: #D49A6A;
-$color-secondary-2-3: #804515;
-$color-secondary-2-4: #552700;
-
-
-
-
-$thecolor: $color-primary-0;
-
 .b-body {
   // font: 400 15px Lato, sans-serif;
   // @include brand;
@@ -245,6 +222,4 @@ footer .glyphicon {
   .logo {
     font-size: 150px;
   }
-
 }
-

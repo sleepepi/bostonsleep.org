@@ -5,6 +5,7 @@ Rails.application.routes.draw do
 
   scope module: 'external' do
     get :home
+    get :publications
     get :version
     get :contact
     get :submit_contact, to: redirect('contact')

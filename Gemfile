@@ -13,6 +13,7 @@ gem 'kaminari',             '~> 0.17.0'
 gem 'figaro',               '~> 1.1.1'
 gem 'bootstrap-sass',       '~> 3.3.6'
 gem 'haml',                 '~> 4.0.6'
+gem 'redcarpet',            '~> 3.3.4'
 
 # Rails Defaults
 gem 'coffee-rails',         '~> 4.2'

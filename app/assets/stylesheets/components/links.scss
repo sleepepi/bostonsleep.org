@@ -1,0 +1,5 @@
+a {
+  &:visited:not(.btn) {
+    color: $color-secondary-2-2;
+  }
+}
