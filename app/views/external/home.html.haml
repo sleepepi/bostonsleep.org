@@ -18,7 +18,7 @@
         fellow researchers in the years to come.
       %br
       %p
-        The Boston Sleep Reading Center (BSRC), housed in the Division of Sleep and Circadian Disorders at Brigham and Women’s Hospital in Boston, Massachusetts, provides high-quality and reliable analysis of physiological data to support industry funded and observational studies, equipment validation projects, pharmacological studies, comparative effectiveness research and clinical trials. Areas of expertise include polysomnography, actigraphy, oximetry, quantitative EEG analysis and more. The SRC provides comprehensive equipment certification services, protocol development and standardization, quality control monitoring, and staff training and certification services. The SRC also contains a Statistical Core that can provide statistical analysis support and an Informatics and Data Management Core that develops highly interactive tools capable of supporting multicenter studies, clinical trials and data repositories. The program includes a staff of approximately 30 individuals, including epidemiologists, biostatisticians, informaticians, clinicians, data managers, research assistants and study coordinators.
+        The Boston Sleep Reading Center (BSRC), housed in the Division of Sleep and Circadian Disorders at Brigham and Women's Hospital in Boston, Massachusetts, provides high-quality and reliable analysis of physiological data to support industry funded and observational studies, equipment validation projects, pharmacological studies, comparative effectiveness research and clinical trials. Areas of expertise include polysomnography, actigraphy, oximetry, quantitative EEG analysis and more. The SRC provides comprehensive equipment certification services, protocol development and standardization, quality control monitoring, and staff training and certification services. The SRC also contains a Statistical Core that can provide statistical analysis support and an Informatics and Data Management Core that develops highly interactive tools capable of supporting multicenter studies, clinical trials and data repositories. The program includes a staff of approximately 30 individuals, including epidemiologists, biostatisticians, informaticians, clinicians, data managers, research assistants and study coordinators.
       %br
       = link_to 'Get in Touch', '#contact', class: 'btn btn-default btn-lg', data: { object: 'scroll-anchor' }
       %br
@@ -30,24 +30,34 @@
   .container
     .row
       .col-sm-8.col-sm-push-4
-        %h2 Our Values
-        - if false
-          %br
-          %h4
-            %strong MISSION:
-            Our mission
-          %br
-          %p
-            %strong VISION:
-            Our vision
+        %h2 Directed By
 
         %p
-          The BSRC is directed by Dr. Susan Redline, Farrell Professor of Sleep Medicine at Harvard Medical School and Director for the Programs in Sleep and Cardiovascular Medicine and Sleep Medicine Epidemiology at Brigham and Women’s Hospital and Beth Israel Deaconess Medical Center. She is an internationally recognized researcher focusing on understanding the risk factors and treatment outcomes of sleep disorders. Dr. Redline has published more than 200 scientific articles and participates in many national organizations involved in setting policies for sleep medicine practice and research.
-        %br
+          %strong Susan Redline, MD, MPH,
+          is the Peter C. Farrell Professor of Sleep Medicine at Harvard Medical
+          School. She directs programs in Sleep and Cardiovascular Medicine and
+          Sleep Medicine Epidemiology at Brigham and Women's Hospital and Beth
+          Israel Deaconess Medical Center. Dr. Redline leads the Boston Sleep
+          Reading Center for a number of major National Institutes of Health
+          (NIH) multicenter studies, directs a national resource of sleep
+          research data
+          = surround '(', ')' do
+            = link_to 'National Sleep Research Resource', 'https://sleepdata.org'
+          and leads a
+          = link_to 'PCORI Patient Powered Research Network', 'https://myapnea.org'
+          on sleep apnea. She has published more than 340 peer-reviewed articles
+          and has served the sleep research community in a number of capacities,
+          including as a member of the Boards of Directors for the American
+          Academy of Sleep Medicine and the Sleep Research Society, the NIH's
+          Sleep Disorders Research Advisory Board, and the Institute of
+          Medicine's Committee on Sleep Medicine and Research, and as deputy
+          editor for the journal Sleep. Dr. Redline received BS and MD degrees
+          from Boston University and her MPH degree from the Harvard School of
+          Public Health.
         %br
       .col-sm-4.col-sm-pull-8
         .hidden-xs{ style: 'height: 70px'}
-        %span.glyphicon.glyphicon-heart-empty.logo.slideanim
+        = image_tag 'susan-redline.jpg', class: 'img-rounded slideanim', style: 'box-shadow:5px 0px 40px rgba(0,0,0, .2)'
 
 #services.container.text-center
   %h2 SERVICES
