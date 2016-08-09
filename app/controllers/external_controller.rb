@@ -12,6 +12,10 @@ class ExternalController < ApplicationController
   def publications
   end
 
+  # GET /services
+  def services
+  end
+
   # GET /contact
   def contact
   end

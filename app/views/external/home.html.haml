@@ -12,13 +12,25 @@
       %h2 About Boston Sleep Reading Center
       %br
       %h4
-        We strive to provide you the best service for reading physiological data.
-        With a dedicated team of polysomnologists and a history of scoring over
-        50,000 sleep studies, you will receive scored data that will be used by
-        fellow researchers in the years to come.
+        We are a fully integrated Sleep Reading Center with more than 20 years
+        of experience in providing highly reliable centralized data analysis and
+        management services.
       %br
       %p
-        The Boston Sleep Reading Center (BSRC), housed in the Division of Sleep and Circadian Disorders at Brigham and Women's Hospital in Boston, Massachusetts, provides high-quality and reliable analysis of physiological data to support industry funded and observational studies, equipment validation projects, pharmacological studies, comparative effectiveness research and clinical trials. Areas of expertise include polysomnography, actigraphy, oximetry, quantitative EEG analysis and more. The SRC provides comprehensive equipment certification services, protocol development and standardization, quality control monitoring, and staff training and certification services. The SRC also contains a Statistical Core that can provide statistical analysis support and an Informatics and Data Management Core that develops highly interactive tools capable of supporting multicenter studies, clinical trials and data repositories. The program includes a staff of approximately 30 individuals, including epidemiologists, biostatisticians, informaticians, clinicians, data managers, research assistants and study coordinators.
+        The Boston Sleep Reading Center (BSRC), housed in the Division of Sleep
+        and Circadian Disorders at Brigham and Women’s Hospital in Boston,
+        Massachusetts, provides high-quality and reliable analysis of
+        physiological data to support clinical sleep programs, industry funded
+        and observational studies, equipment validation projects,
+        pharmacological studies, comparative effectiveness research and clinical
+        trials. The BSRC also contains a Statistical Core that can provide
+        statistical analysis support and an Informatics and Data Management Core
+        that develops highly interactive tools capable of supporting multicenter
+        studies, clinical trials and data repositories. The program includes a
+        staff of approximately 30 individuals, including epidemiologists,
+        biostatisticians, informaticians, clinicians, project and data managers,
+        credentialed sleep technologists, research assistants and study
+        coordinators.
       %br
       = link_to 'Get in Touch', '#contact', class: 'btn btn-default btn-lg', data: { object: 'scroll-anchor' }
       %br
@@ -60,31 +72,49 @@
         .hidden-xs{ style: 'height: 70px'}
         = image_tag 'susan-redline.jpg', class: 'img-rounded slideanim', style: 'box-shadow:5px 0px 40px rgba(0,0,0, .2)'
 
-#services.container.text-center
-  %h2 SERVICES
-  %h4 What we offer
-  %br
-  .row.slideanim
-    .col-sm-4
-      %span.glyphicon.glyphicon-bed.logo-small
-      %h4 POLYSOMNOGRAPHY SCORING
-      %p
-        Your data will be scored by our highly trained and certified staff of
-        registered polysomnographists.
-    .col-sm-4
-      %span.glyphicon.glyphicon-tasks.logo-small
-      %h4 DATA MANAGEMENT
-      %p
-        We'll provide you with real-time updates and reports as we process your
-        data.
-    .col-sm-4
-      %span.glyphicon.glyphicon-lock.logo-small
-      %h4 SECURE TRANSFER
-      %p
-        We will provide you with tools so that you can easily send us data that
-        is encrypted and protected.
-  %br
-  %br
+#services.container
+  %h2.text-center SERVICES
+
+  .row
+    .col-md-3
+      .service Data Management
+      .service Equipment Certification Services
+    .col-md-3
+      .service Polysomnography Scoring
+      .service Actigraphy Analysis
+      .service Staff Training and Certification
+    .col-md-3
+      .service Oximetry Analysis
+      .service Quantitative EEG Analysis
+      .service Statistical Analysis Support
+    .col-md-3
+      .service Quality Control Monitoring
+      .service Protocol Development and Standardization
+
+  - if false
+    %h4 What we offer
+    %br
+    .row.slideanim
+      .col-sm-4
+        %span.glyphicon.glyphicon-bed.logo-small
+        %h4 POLYSOMNOGRAPHY SCORING
+        %p
+          Your data will be scored by our highly trained and certified staff of
+          registered polysomnographists.
+      .col-sm-4
+        %span.glyphicon.glyphicon-tasks.logo-small
+        %h4 DATA MANAGEMENT
+        %p
+          We'll provide you with real-time updates and reports as we process your
+          data.
+      .col-sm-4
+        %span.glyphicon.glyphicon-lock.logo-small
+        %h4 SECURE TRANSFER
+        %p
+          We will provide you with tools so that you can easily send us data that
+          is encrypted and protected.
+    %br
+    %br
 
 / Container (Portfolio Section)
 #research.text-center.bg-grey{ style: 'padding-bottom: 100px' }
