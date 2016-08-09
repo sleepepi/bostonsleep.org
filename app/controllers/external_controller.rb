@@ -1,3 +1,6 @@
+# frozen_string_literal: true
+
+# Displays publicly available pages
 class ExternalController < ApplicationController
   layout 'layouts/b-layout'
 
