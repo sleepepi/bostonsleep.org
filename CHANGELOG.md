@@ -12,3 +12,4 @@
   - Updated to Ruby 2.4.0
   - Updated to rails 5.0.1
   - Updated to pg 0.19.0
+  - Updated to jquery-rails 4.2.2
