@@ -10,3 +10,4 @@
   - Added a sitemap for better indexing on Google and Bing
 - **Gem Changes**
   - Updated to rails 5.0.1
+  - Updated to pg 0.19.0
