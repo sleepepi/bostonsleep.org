@@ -69,7 +69,7 @@
           Public Health.
         %br
       .col-sm-4.col-sm-pull-8
-        .hidden-xs{ style: 'height: 70px'}
+        .hidden-xs{ style: 'height: 70px' }
         = image_tag 'susan-redline.jpg', class: 'img-rounded slideanim', style: 'box-shadow:5px 0px 40px rgba(0,0,0, .2)'
 
 #services.container
@@ -129,23 +129,26 @@
 
     .row.text-center.slideanim
       .col-sm-4
-        .thumbnail
-          = image_tag 'shhs_logo.png', alt: 'Sleep Heart Health Study', style: 'max-width:100%;'
-          %p
-            %strong SHHS
-          %p 5,000+ studies scored SHHS
+        = link_to 'https://sleepdata.org/datasets/shhs' do
+          .thumbnail
+            = image_tag 'shhs_logo.png', alt: 'Sleep Heart Health Study', style: 'max-width:100%;'
+            %p
+              %strong SHHS
+            %p 8,000+ studies scored
       .col-sm-4
-        .thumbnail
-          = image_tag 'heartbeat-logo.png', alt: 'HeartBEAT', style: 'max-width:100%;'
-          %p
-            %strong HeartBEAT
-          %p 500+ studies scored HeartBEAT
+        = link_to 'https://sleepdata.org/datasets/heartbeat' do
+          .thumbnail
+            = image_tag 'heartbeat-logo.png', alt: 'HeartBEAT', style: 'max-width:100%;'
+            %p
+              %strong HeartBEAT
+            %p 1,000+ studies scored
       .col-sm-4
-        .thumbnail
-          = image_tag 'bestair_logo.png', alt: 'BestAIR', style: 'max-width:100%;'
-          %p
-            %strong BestAIR
-          %p 2,000 studies scored BestAIR
+        = link_to 'https://sleepdata.org/datasets/bestair' do
+          .thumbnail
+            = image_tag 'bestair_logo.png', alt: 'BestAIR', style: 'max-width:100%;'
+            %p
+              %strong BestAIR
+            %p 500+ studies scored
     - if false
       %br
       %h2 What our customers say
@@ -260,6 +263,9 @@
             %h4 per month
             %button.btn.btn-lg Sign Up
 
+.container
+  .text-center
+    %h2 CONTACT
 = render 'external/contact'
 
 %footer.text-center{ style: 'margin-top: 50px' }
