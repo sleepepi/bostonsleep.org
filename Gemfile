@@ -14,7 +14,7 @@ gem 'devise',               '~> 4.2.0'
 gem 'figaro',               '~> 1.1.1'
 gem 'haml',                 '~> 4.0.6'
 gem 'kaminari',             '~> 0.17.0'
-gem 'redcarpet',            '~> 3.3.4'
+gem 'redcarpet',            '~> 3.4.0'
 gem 'sitemap_generator',    '~> 5.1.0'
 
 # Rails Defaults

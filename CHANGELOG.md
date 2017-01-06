@@ -14,3 +14,4 @@
   - Updated to pg 0.19.0
   - Updated to jquery-rails 4.2.2
   - Updated to carrierwave 1.0.0
+  - Updated to redcarpet 3.4.0
