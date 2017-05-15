@@ -16,7 +16,7 @@ gem 'figaro',               '~> 1.1.1'
 gem 'haml',                 '~> 5.0.1'
 gem 'kaminari',             '~> 1.0.1'
 gem 'redcarpet',            '~> 3.4.0'
-gem 'sitemap_generator',    '~> 5.2.0'
+gem 'sitemap_generator',    '~> 5.3.1'
 
 # Rails Defaults
 gem 'coffee-rails',         '~> 4.2'
