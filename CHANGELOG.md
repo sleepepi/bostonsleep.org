@@ -5,6 +5,7 @@
   - Updated to Ruby 2.4.1
   - Updated to carrierwave 1.1.0
   - Updated to haml 5.0.1
+  - Updated to kaminari 1.0.1
 
 ## 1.0.0 (January 6, 2017)
 
