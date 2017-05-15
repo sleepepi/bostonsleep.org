@@ -4,7 +4,7 @@
 [![Dependency Status](https://gemnasium.com/sleepepi/bostonsleep.org.svg)](https://gemnasium.com/sleepepi/bostonsleep.org)
 [![Code Climate](https://codeclimate.com/github/sleepepi/bostonsleep.org/badges/gpa.svg)](https://codeclimate.com/github/sleepepi/bostonsleep.org)
 
-The application that runs www.bostonsleep.org. Using Rails 5.0+ and Ruby 2.4+.
+The application that runs www.bostonsleep.org. Using Rails 5.1+ and Ruby 2.4+.
 
 
 ## Setting up Cron Jobs
