@@ -2,6 +2,7 @@
 
 ### Enhancements
 - **Gem Changes**
+  - Updated to carrierwave 1.1.0
   - Updated to haml 5.0.1
 
 ## 1.0.0 (January 6, 2017)
