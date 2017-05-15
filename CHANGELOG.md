@@ -8,6 +8,7 @@
   - Updated to jquery-rails 4.3.1
   - Updated to kaminari 1.0.1
   - Updated to sitemap_generator 5.3.1
+  - Updated to simplecov 0.14.1
 
 ## 1.0.0 (January 6, 2017)
 
