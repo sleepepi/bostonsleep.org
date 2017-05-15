@@ -3,6 +3,7 @@
 ### Enhancements
 - **Gem Changes**
   - Updated to Ruby 2.4.1
+  - Updated to pg 0.20.0
   - Updated to carrierwave 1.1.0
   - Updated to haml 5.0.1
   - Updated to jquery-rails 4.3.1
