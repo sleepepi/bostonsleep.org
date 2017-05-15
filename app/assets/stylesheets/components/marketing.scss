@@ -22,8 +22,8 @@
 }
 
 .marketing-intro {
-  font-weight: 300;
   font-size: 20px;
+  font-weight: 300;
   margin-top: 40px;
   text-align: justify;
 }
@@ -74,7 +74,7 @@
 @media screen and (min-width: $screen-sm-min) {
   .marketing-quote {
     font-size: 32px;
-    margin: 40px 0 40px;
+    margin: 40px 0;
   }
 }
 

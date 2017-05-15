@@ -1,7 +1,6 @@
 .publication {
   @include remove-last-child-bottom-margin;
 
-  // margin-bottom: 20px;
   padding: 20px;
 
   .publication-title {
@@ -10,9 +9,9 @@
   }
 
   &:nth-child(even) {
-    color: $brand-gray;
     background-color: $color-primary-1;
     border-left: 2px solid $brand-primary;
+    color: $brand-gray;
 
     .publication-title {
       color: $brand-white;
