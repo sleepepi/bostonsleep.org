@@ -35,10 +35,25 @@ Rails/SkipsModelValidations:
 
 # Check quotes usage according to lint rule below.
 Style/StringLiterals:
-  Enabled: false
-  # Enabled: true
-  # EnforcedStyle: double_quotes
+  Enabled: true
+  EnforcedStyle: double_quotes
 
 # Allow perl backrefs.
 Style/PerlBackrefs:
+  Enabled: false
+
+# Allow symbol arrays.
+Style/SymbolArray:
+  Enabled: false
+
+# Allow word arrays.
+Style/WordArray:
+  Enabled: false
+
+# Don't require brackets for white-space separated arrays.
+Style/PercentLiteralDelimiters:
+  Enabled: false
+
+# Don't require formatted string tokens.
+Style/FormatStringToken:
   Enabled: false
