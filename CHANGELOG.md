@@ -3,6 +3,7 @@
 ### Enhancements
 - **General Changes**
   - Added the MESA dataset
+  - Added Google Analytics
 
 ## 2.0.0 (May 16, 2017)
 
