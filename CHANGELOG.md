@@ -1,5 +1,9 @@
 ## 2.1.0
 
+### Enhancements
+- **General Changes**
+  - Added the MESA dataset
+
 ## 2.0.0 (May 16, 2017)
 
 ### Enhancements
