@@ -1,6 +1,6 @@
-- @body_class = 'b-body'
+- @body_class = "b-body"
 
-= render 'layouts/slide_menu'
+= render "layouts/slide_menu"
 
 .jumbotron.text-center
   %h1 Boston Sleep
@@ -32,11 +32,11 @@
         credentialed sleep technologists, research assistants and study
         coordinators.
       %br
-      = link_to 'Get in Touch', '#contact', class: 'btn btn-default btn-lg', data: { object: 'scroll-anchor' }
+      = link_to "Get in Touch", "#contact", class: "btn btn-default btn-lg", data: { object: "scroll-anchor" }
       %br
       %br
     .col-sm-4
-      .hidden-xs{ style: 'height: 122px'}
+      .hidden-xs{ style: "height: 122px;" }
       %span.glyphicon.glyphicon-signal.logo
 .bg-grey
   .container
@@ -53,12 +53,12 @@
           Reading Center for a number of major National Institutes of Health
           (NIH) multicenter studies, directs a national resource of sleep
           research data
-          = surround '(', ')' do
-            = link_to 'National Sleep Research Resource', 'https://sleepdata.org'
+          = surround "(", ")" do
+            = link_to "National Sleep Research Resource", "https://sleepdata.org"
           and leads a
-          = link_to 'PCORI Patient Powered Research Network', 'https://myapnea.org'
+          = link_to "PCORI Patient Powered Research Network", "https://myapnea.org"
           on sleep apnea. She has published more than
-          = link_to '340 peer-reviewed articles', publications_path
+          = link_to "340 peer-reviewed articles", publications_path
           and has served the sleep research community in a number of capacities,
           including as a member of the Boards of Directors for the American
           Academy of Sleep Medicine and the Sleep Research Society, the NIH's
@@ -69,8 +69,8 @@
           Public Health.
         %br
       .col-sm-4.col-sm-pull-8
-        .hidden-xs{ style: 'height: 70px' }
-        = image_tag 'susan-redline.jpg', class: 'img-rounded slideanim', style: 'box-shadow:5px 0px 40px rgba(0,0,0, .2)'
+        .hidden-xs{ style: "height: 70px;" }
+        = image_tag "susan-redline.jpg", class: "img-rounded slideanim", style: "box-shadow:5px 0px 40px rgba(0,0,0, .2)"
 
 #services.container
   %h2.text-center SERVICES
@@ -117,7 +117,7 @@
     %br
 
 / Container (Portfolio Section)
-#research.text-center.bg-grey{ style: 'padding-bottom: 100px' }
+#research.text-center.bg-grey{ style: "padding-bottom: 100px;" }
   .container
     %h2 Research
     %h4 Past Studies and Collaborations
@@ -129,23 +129,23 @@
 
     .row.text-center.slideanim
       .col-sm-4
-        = link_to 'https://sleepdata.org/datasets/shhs' do
+        = link_to "https://sleepdata.org/datasets/shhs" do
           .thumbnail
-            = image_tag 'shhs_logo.png', alt: 'Sleep Heart Health Study', style: 'max-width:100%;'
+            = image_tag "shhs_logo.png", alt: "Sleep Heart Health Study", style: "max-width:100%;"
             %p
               %strong SHHS
             %p 8,000+ studies scored
       .col-sm-4
-        = link_to 'https://sleepdata.org/datasets/heartbeat' do
+        = link_to "https://sleepdata.org/datasets/heartbeat" do
           .thumbnail
-            = image_tag 'heartbeat-logo.png', alt: 'HeartBEAT', style: 'max-width:100%;'
+            = image_tag "heartbeat-logo.png", alt: "HeartBEAT", style: "max-width:100%;"
             %p
               %strong HeartBEAT
             %p 1,000+ studies scored
       .col-sm-4
-        = link_to 'https://sleepdata.org/datasets/bestair' do
+        = link_to "https://sleepdata.org/datasets/bestair" do
           .thumbnail
-            = image_tag 'bestair_logo.png', alt: 'BestAIR', style: 'max-width:100%;'
+            = image_tag "bestair_logo.png", alt: "BestAIR", style: "max-width:100%;"
             %p
               %strong BestAIR
             %p 500+ studies scored
@@ -164,17 +164,17 @@
             %h4
               "This company is the best. I am so happy with the result!"
               %br
-                %span{ style: 'font-style:normal;' } Michael Roe, Vice President, Comment Box
+                %span{ style: "font-style: normal;" } Michael Roe, Vice President, Comment Box
           .item
             %h4
               "One word... WOW!!"
               %br
-                %span{ style: 'font-style:normal;' } John Doe, Salesman, Rep Inc
+                %span{ style: "font-style: normal;" } John Doe, Salesman, Rep Inc
           .item
             %h4
               "Could I... BE any more happy with this company?"
               %br
-                %span{ style: 'font-style:normal;' } Chandler Bing, Actor, FriendsAlot
+                %span{ style: "font-style: normal;" } Chandler Bing, Actor, FriendsAlot
         / Left and right controls
         %a.left.carousel-control{"data-slide" => "prev", :href => "#myCarousel", :role => "button"}
           %span.glyphicon.glyphicon-chevron-left{"aria-hidden" => "true"}
@@ -266,11 +266,11 @@
 .container
   .text-center
     %h2 CONTACT
-= render 'external/contact'
+= render "external/contact"
 
-%footer.text-center{ style: 'margin-top: 50px' }
+%footer.text-center{ style: "margin-top: 50px;" }
   .container
-    = link_to '#top', title: 'To Top' do
+    = link_to "#top", title: "To Top" do
       %span.glyphicon.glyphicon-chevron-up
     %p
       Boston Sleep Reading Center &copy;

@@ -1,46 +1,52 @@
 # frozen_string_literal: true
 
-# Displays publicly available pages
+# Displays publicly available pages.
 class ExternalController < ApplicationController
-  layout 'layouts/b-layout'
+  layout "layouts/b-layout"
 
-  # GET /
-  def home
-  end
+  # # GET /
+  # def home
+  # end
 
-  # GET /publications
-  def publications
-  end
+  # # GET /publications
+  # def publications
+  # end
 
-  # GET /services
-  def services
-  end
+  # # GET /services
+  # def services
+  # end
 
-  # GET /contact
-  def contact
-  end
+  # # GET /contact
+  # def contact
+  # end
 
   # POST /submit_contact
   def submit_contact
     if params[:name].present? && params[:email].present? && params[:comments].present?
-      UserMailer.contact(params[:name], params[:email], params[:comments]).deliver_now if EMAILS_ENABLED
+      send_contact_email
       redirect_to thanks_path
     else
       render :contact
     end
   end
 
-  # GET /thanks
-  def thanks
-  end
+  # # GET /thanks
+  # def thanks
+  # end
 
   # GET /sitemap.xml.gz
   def sitemap_xml
-    sitemap_xml = File.join(CarrierWave::Uploader::Base.root, 'sitemaps', 'sitemap.xml.gz')
+    sitemap_xml = File.join(CarrierWave::Uploader::Base.root, "sitemaps", "sitemap.xml.gz")
     if File.exist?(sitemap_xml)
       send_file sitemap_xml
     else
       head :ok
     end
+  end
+
+  private
+
+  def send_contact_email
+    UserMailer.contact(params[:name], params[:email], params[:comments]).deliver_now if EMAILS_ENABLED
   end
 end

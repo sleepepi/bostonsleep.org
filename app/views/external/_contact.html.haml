@@ -22,11 +22,11 @@
 
           .row
             .col-sm-6.form-group
-              = text_field_tag 'name', params[:name], class: 'form-control', placeholder: 'Name'
+              = text_field_tag "name", params[:name], class: "form-control", placeholder: "Name"
             .col-sm-6.form-group
-              = email_field_tag 'email', params[:email], class: 'form-control', placeholder: 'Email'
-          = text_area_tag 'comments', params[:comments], class: 'form-control', placeholder: 'Comment', rows: 5
+              = email_field_tag "email", params[:email], class: "form-control", placeholder: "Email"
+          = text_area_tag "comments", params[:comments], class: "form-control", placeholder: "Comment", rows: 5
           %br
           .row
             .col-sm-12.form-group
-              %button.btn.btn-primary.pull-right{ type: 'submit' } Send
+              %button.btn.btn-primary.pull-right{ type: "submit" } Send

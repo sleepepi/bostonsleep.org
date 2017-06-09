@@ -1,11 +1,11 @@
 # frozen_string_literal: true
 
-require 'simplecov'
-require 'minitest/pride'
+require "simplecov"
+require "minitest/pride"
 
-ENV['RAILS_ENV'] ||= 'test'
-require File.expand_path('../../config/environment', __FILE__)
-require 'rails/test_help'
+ENV["RAILS_ENV"] ||= "test"
+require File.expand_path("../../config/environment", __FILE__)
+require "rails/test_help"
 
 # Set up ActiveSupport tests
 class ActiveSupport::TestCase
