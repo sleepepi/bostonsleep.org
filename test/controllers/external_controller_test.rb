@@ -4,6 +4,11 @@ require "test_helper"
 
 # Assure that external pages load.
 class ExternalControllerTest < ActionDispatch::IntegrationTest
+  test "should get blank" do
+    get blank_url
+    assert_response :success
+  end
+
   test "should get home" do
     get home_url
     assert_response :success

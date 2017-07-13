@@ -4,7 +4,12 @@
 class ExternalController < ApplicationController
   layout "layouts/b-layout"
 
-  # # GET /
+  # GET /blank
+  def blank
+    render layout: "layouts/full_page"
+  end
+
+  # # GET /home
   # def home
   # end
 

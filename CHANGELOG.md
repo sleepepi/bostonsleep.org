@@ -1,6 +1,8 @@
 ## 3.0.0
 
 ### Enhancements
+- **General Changes**
+  - Reworking layout of content
 - **Gem Changes**
   - Updated to rails 5.1.2
   - Updated to pg 0.21.0
