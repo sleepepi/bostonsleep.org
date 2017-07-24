@@ -1,8 +1,33 @@
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+body {
+  &.full-page {
+    margin-bottom: $footer-height;
+    padding-top: $header-height;
+  }
+
+  &.full-page-no-header {
+    margin-bottom: $footer-height;
+    padding-top: 0;
+  }
+}
+
+.body-content {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+$p200-orange-rgba: rgba(255, 204, 128, .99);
+
 ::selection {
-  background-color: $brand-primary;
-  color: $brand-white;
+  background-color: $p200-orange-rgba;
+  color: $p800-grey;
+  text-shadow: none;
 }
 
 :focus {
-  outline-color: $brand-primary !important;
+  outline-color: $p200-orange !important;
 }

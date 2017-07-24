@@ -1,14 +1,9 @@
-%nav.navbar.navbar-default.navbar-fixed-top
-  .container
-    .navbar-header
-      %button.navbar-toggle{ type: "button", data: { target: "#myNavbar", toggle: "collapse" } }
-        %span.icon-bar
-        %span.icon-bar
-        %span.icon-bar
-      = link_to "Boston Sleep", root_path, class: "navbar-brand"
-    #myNavbar.collapse.navbar-collapse
-      %ul.nav.navbar-nav.navbar-right
-        %li= link_to "ABOUT", root_path(anchor: "about")
-        %li= link_to "SERVICES", root_path(anchor: "services")
-        %li= link_to "PUBLICATIONS", publications_path
-        %li= link_to "CONTACT", contact_path
+%nav.navbar.fixed-top.navbar-toggleable-md.navbar-light.bg-faded
+  .container.container-xs-fix
+    %button.navbar-toggler.navbar-toggler-right{ type: "button", data: { toggle: "collapse", target: "#navbarSupportedContent" }, aria: { controls: "navbarSupportedContent", expanded: "false", label: "Toggle navigation" } }
+      %span.navbar-toggler-icon
+    = link_to root_path, class: "navbar-brand" do
+      Boston Sleep
+    #navbarSupportedContent.collapse.navbar-collapse
+      %ul.navbar-nav.mr-auto
+        = render "menu/item", title: "About", path: about_path

@@ -1,17 +1,21 @@
-.center,
-.text-center {
-  text-align: center;
+.breakword {
+  word-break: break-word;
 }
 
-.text-right {
-  text-align: right;
+.center-vertically {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@include media-breakpoint-down(lg) {
+  .center-vertically-xs-sm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 .nowrap {
   white-space: nowrap;
-}
-
-.overflow-hidden {
-  overflow: hidden;
-  text-overflow: ellipsis;
 }

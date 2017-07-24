@@ -1,0 +1,36 @@
+- @title = "Staff"
+
+.page-box.last-slide.background-p50-grey.center-vertically-xs-sm
+  .container
+    .row.col-buffer
+      .offset-sm-2.col-sm-10
+        %h1.main-title Boston Sleep Reading Center
+    .row
+      .col-sm-2.hidden-xs-down
+        = render "menu/left_menu"
+      .col-sm-10
+        .backdrop-white
+          %p
+            %strong
+              Leadership
+          %p Dr. Susan Redline, MD, MPH, Director
+          %p Dr. Daniel Gottlieb, MD, MPH, Co-Director
+
+        .backdrop-regular
+          %p
+            %strong
+              Faculty
+          %p Dr. Shaun Purcell
+          %p Dr. Sara Mariani
+
+        .backdrop-regular
+          %p
+            %strong
+              Sleep Specialist
+          %p Dan Mobley, CPSGT
+
+        .backdrop-regular
+          %p
+            = link_to contact_path do
+              Contact us
+              %i.fa.fa-caret-right

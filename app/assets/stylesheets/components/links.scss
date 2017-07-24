@@ -1,5 +1,4 @@
-a {
-  &:visited:not(.btn) {
-    color: $color-secondary-2-2;
-  }
+.nav-link.active {
+  color: $p500-orange;
+  text-decoration: underline;
 }

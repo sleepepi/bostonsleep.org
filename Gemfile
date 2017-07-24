@@ -9,10 +9,11 @@ gem "pg",                   "0.21.0"
 
 # Gems used by project
 gem "autoprefixer-rails"
-gem "bootstrap-sass",       "~> 3.3.6"
+gem "bootstrap",            "~> 4.0.0.alpha6"
 gem "carrierwave",          "~> 1.1.0"
 gem "devise",               "~> 4.3.0"
 gem "figaro",               "~> 1.1.1"
+gem "font-awesome-rails",   "~> 4.7.0"
 gem "haml",                 "~> 5.0.1"
 gem "kaminari",             "~> 1.0.1"
 gem "redcarpet",            "~> 3.4.0"
@@ -32,8 +33,14 @@ group :test do
   gem "minitest"
   gem "rails-controller-testing"
   gem "simplecov", "~> 0.14.1", require: false
+  gem "puma"
 end
 
 group :development do
   gem "web-console", "~> 3.0"
+end
+
+group :development, :test do
+  gem "capybara", "~> 2.13"
+  gem "selenium-webdriver"
 end

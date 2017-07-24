@@ -1,9 +1,17 @@
-- @body_class = "b-body"
-
-= render "layouts/menu"
-
-.jumbotron.text-center
-  %h1 Boston Sleep
-  %p Thanks for sending us a message! We'll get back to you shortly!
-
-= render "layouts/footer"
+.page-box.last-slide.background-p50-grey.center-vertically-xs-sm
+  .container
+    .row.col-buffer
+      .offset-sm-2.col-sm-10
+        %h1.main-title Boston Sleep Reading Center
+    .row
+      .col-sm-2.hidden-xs-down
+        = render "menu/left_menu"
+      .col-sm-10
+        .backdrop-white
+          %p.lead
+            Thanks for your message. We'll get back shortly!
+        .backdrop-regular
+          %p
+            = link_to about_path do
+              Learn more
+              %i.fa.fa-caret-right

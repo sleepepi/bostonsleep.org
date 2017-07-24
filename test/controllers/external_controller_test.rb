@@ -4,23 +4,8 @@ require "test_helper"
 
 # Assure that external pages load.
 class ExternalControllerTest < ActionDispatch::IntegrationTest
-  test "should get blank" do
-    get blank_url
-    assert_response :success
-  end
-
-  test "should get home" do
-    get home_url
-    assert_response :success
-  end
-
-  test "should get publications" do
-    get publications_url
-    assert_response :success
-  end
-
-  test "should get services" do
-    get services_url
+  test "should get about" do
+    get about_url
     assert_response :success
   end
 
@@ -29,30 +14,38 @@ class ExternalControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
-  test "should submit contact" do
-    post submit_contact_url, params: {
-      name: "Name", email: "email@example.com",
-      comments: "Hi\nThis is my message.\nThanks!"
-    }
-    assert_redirected_to thanks_path
-  end
-
-  test "should not submit contact without required fields" do
-    post submit_contact_url, params: {
-      name: "", email: "email@example.com",
-      comments: "Hi\nThis is my message.\nThanks!"
-    }
-    assert_template "contact"
+  test "should get root page" do
+    get root_url
     assert_response :success
   end
 
-  test "should get thanks" do
-    get thanks_url
+  test "should get facility" do
+    get facility_url
+    assert_response :success
+  end
+
+  test "should get research" do
+    get research_url
+    assert_response :success
+  end
+
+  test "should get services" do
+    get services_url
     assert_response :success
   end
 
   test "should get sitemap xml file" do
     get sitemap_xml_url
+    assert_response :success
+  end
+
+  test "should get staff" do
+    get staff_url
+    assert_response :success
+  end
+
+  test "should get thanks" do
+    get thanks_url
     assert_response :success
   end
 
@@ -73,6 +66,23 @@ class ExternalControllerTest < ActionDispatch::IntegrationTest
     else
       assert_equal BostonSleepOrg::VERSION::BUILD, version["version"]["build"]
     end
+    assert_response :success
+  end
+
+  test "should submit contact" do
+    post submit_contact_url, params: {
+      name: "Name", email: "email@example.com",
+      comments: "Hi\nThis is my message.\nThanks!"
+    }
+    assert_redirected_to thanks_path
+  end
+
+  test "should not submit contact without required fields" do
+    post submit_contact_url, params: {
+      name: "", email: "email@example.com",
+      comments: "Hi\nThis is my message.\nThanks!"
+    }
+    assert_template "contact"
     assert_response :success
   end
 end

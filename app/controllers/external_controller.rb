@@ -2,41 +2,28 @@
 
 # Displays publicly available pages.
 class ExternalController < ApplicationController
-  layout "layouts/b-layout"
-
-  # GET /blank
-  def blank
-    render layout: "layouts/full_page"
-  end
-
-  # # GET /home
-  # def home
-  # end
-
-  # # GET /publications
-  # def publications
-  # end
-
-  # # GET /services
-  # def services
+  # # GET /about
+  # def about
   # end
 
   # # GET /contact
   # def contact
   # end
 
-  # POST /submit_contact
-  def submit_contact
-    if params[:name].present? && params[:email].present? && params[:comments].present?
-      send_contact_email
-      redirect_to thanks_path
-    else
-      render :contact
-    end
-  end
+  # # GET /
+  # def home
+  # end
 
-  # # GET /thanks
-  # def thanks
+  # # GET /facility
+  # def facility
+  # end
+
+  # # GET /research
+  # def research
+  # end
+
+  # # GET /services
+  # def services
   # end
 
   # GET /sitemap.xml.gz
@@ -46,6 +33,29 @@ class ExternalController < ApplicationController
       send_file sitemap_xml
     else
       head :ok
+    end
+  end
+
+  # # GET /staff
+  # def staff
+  # end
+
+  # # GET /thanks
+  # def thanks
+  # end
+
+  # # GET /version
+  # # GET /version.json
+  # def version
+  # end
+
+  # POST /submit_contact
+  def submit_contact
+    if params[:name].present? && params[:email].present? && params[:comments].present?
+      send_contact_email
+      redirect_to thanks_path
+    else
+      render :contact
     end
   end
 

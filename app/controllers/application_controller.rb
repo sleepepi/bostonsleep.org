@@ -6,6 +6,8 @@ class ApplicationController < ActionController::Base
   skip_before_action :verify_authenticity_token, if: :devise_login?
   before_action :configure_permitted_parameters, if: :devise_controller?
 
+  layout "full_page_no_header"
+
   protected
 
   def devise_login?

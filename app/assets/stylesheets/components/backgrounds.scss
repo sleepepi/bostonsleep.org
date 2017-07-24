@@ -1,0 +1,22 @@
+.background-p50-grey {
+  background-color: $p50-grey;
+}
+
+.backdrop-regular,
+.backdrop-white {
+  @include remove-last-child-bottom-margin;
+
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.backdrop-regular {
+  background-color: $p50-grey;
+  border: 1px solid $p100-grey;
+}
+
+.backdrop-white {
+  background-color: $brand-white;
+  border: 1px solid $p100-grey;
+}
+

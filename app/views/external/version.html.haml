@@ -1,10 +1,14 @@
 - @title = "Version"
-- @body_class = "b-body"
-
-= render "layouts/menu"
-
-.jumbotron.text-center
-  %h1 Boston Sleep
-  %p= BostonSleepOrg::VERSION::STRING
-
-= render "layouts/footer"
+.page-box.last-slide.background-p50-grey.center-vertically-xs-sm
+  .container
+    .row.col-buffer
+      .offset-sm-2.col-sm-10
+        %h1.main-title Boston Sleep Reading Center
+    .row
+      .col-sm-2.hidden-xs-down
+        = render "menu/left_menu"
+      .col-sm-10
+        .backdrop-white
+          %p.lead
+            Version
+            = BostonSleepOrg::VERSION::STRING
