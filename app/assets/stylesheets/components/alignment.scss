@@ -2,20 +2,6 @@
   word-break: break-word;
 }
 
-.center-vertically {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-@include media-breakpoint-down(lg) {
-  .center-vertically-xs-sm {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-}
-
 .nowrap {
   white-space: nowrap;
 }
