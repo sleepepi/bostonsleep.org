@@ -2,9 +2,32 @@
   background-color: $p50-grey;
 }
 
+.background-fixed-image,
+.background-fixed-image-small {
+  background-image: url("221_old.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.background-fixed-image {
+  height: 500px;
+}
+
+.background-fixed-image-small {
+  height: 100px;
+}
+
+.color-overlay {
+  // background-color: rgba(239, 61, 74, .6);
+  background-color: rgba(255, 255, 255, .7);
+}
+
 .backdrop-regular,
 .backdrop-white {
   @include remove-last-child-bottom-margin;
+  @include scale-images;
 
   padding: 2rem;
   margin-bottom: 1.5rem;

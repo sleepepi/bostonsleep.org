@@ -43,3 +43,11 @@
 .page-box-no-padding {
   padding: 0;
 }
+
+.full-page-no-header {
+  .page-box-custom {
+    &.last-slide {
+      min-height: calc(100vh - 500px - #{$footer-height});
+    }
+  }
+}

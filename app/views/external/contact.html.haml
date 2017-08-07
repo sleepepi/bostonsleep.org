@@ -1,10 +1,8 @@
 - @title = "Contact"
 
 .page-box.last-slide.background-p50-grey
+  = render "layouts/small_heading"
   .container
-    .row.col-buffer
-      .offset-sm-2.col-sm-10
-        %h1.main-title Boston Sleep Reading Center
     .row
       .col-sm-2.hidden-xs-down
         = render "menu/left_menu"
@@ -14,18 +12,19 @@
             %strong For all inquiries regarding new projects
 
           %p Dr. Susan Redline, MD, MPH, Director
-          %p Boston Sleep Reading Center
+          %p Brigham Sleep Reading Center
           %p Brigham and Women's Hospital
           %p Harvard Medical School
           %p 221 Longwood Avenue, Boston, MA 02115
-          %p Phone: 617.732.5859
-          %p Email: sredline1@rics.bwh.harvard.edu
+          - if false
+            %p Phone: 617.732.5859
+          %p Email: sredline@bwh.harvard.edu
 
         .backdrop-regular
           %p
             %strong For general inquiries regarding BSRC services
           %p Dan Mobley
-          %p Boston Sleep Reading Center
+          %p Brigham Sleep Reading Center
           %p Brigham and Women's Hospital
           %p Harvard Medical School
           %p 221 Longwood Avenue, Boston, MA 02115

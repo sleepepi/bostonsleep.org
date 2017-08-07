@@ -1,10 +1,9 @@
 - @title = "Services"
 
 .page-box.last-slide.background-p50-grey
+  = render "layouts/small_heading"
+
   .container
-    .row.col-buffer
-      .offset-sm-2.col-sm-10
-        %h1.main-title Boston Sleep Reading Center
     .row
       .col-sm-2.hidden-xs-down
         = render "menu/left_menu"
@@ -46,6 +45,8 @@
             %li Statistical Analysis Support
             %li Web-based data sharing and visualization
             %li Archival and repository creation
+
+        .backdrop-regular= image_tag "c3-920.png"
 
         .backdrop-regular
           %p
