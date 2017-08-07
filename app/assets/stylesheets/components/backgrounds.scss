@@ -4,7 +4,7 @@
 
 .background-fixed-image,
 .background-fixed-image-small {
-  background-image: url("221_old.jpg");
+  background-image: asset-url("221_old.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
