@@ -20,4 +20,8 @@ module ApplicationHelper
   def add_table_class(text, table_class)
     text.to_s.gsub(/<table>/m, "<table class=\"#{table_class}\">").html_safe
   end
+
+  def src_abbr
+    content_tag :abbr, "SRC", title: "Sleep Reading Center"
+  end
 end

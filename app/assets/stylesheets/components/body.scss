@@ -20,14 +20,14 @@ body {
   padding-top: 20px;
 }
 
-$p200-orange-rgba: rgba(255, 204, 128, .99);
+$p200-blue-rgba: rgba(144, 202, 249, .99);
 
 ::selection {
-  background-color: $p200-orange-rgba;
+  background-color: $p200-blue-rgba;
   color: $p800-grey;
   text-shadow: none;
 }
 
 :focus {
-  outline-color: $p200-orange !important;
+  outline-color: $p200-blue !important;
 }

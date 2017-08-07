@@ -19,9 +19,11 @@
   height: 100px;
 }
 
+$p900-blue-rgba: rgba(13, 71, 161, .7);
+
 .color-overlay {
-  // background-color: rgba(239, 61, 74, .6);
-  background-color: rgba(255, 255, 255, .7);
+  background-color: $p900-blue-rgba;
+  color: $brand-white;
 }
 
 .backdrop-regular,
@@ -42,4 +44,3 @@
   background-color: $brand-white;
   border: 1px solid $p100-grey;
 }
-

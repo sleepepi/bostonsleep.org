@@ -1,0 +1,26 @@
+.left-menu {
+  position: sticky;
+  top: $header-height;
+
+  .nav-link {
+    padding-left: 0;
+    text-align: right;
+    border-right: 1px solid transparent;
+    margin-bottom: 2px;
+
+    &:hover,
+    &:focus,
+    &:active,
+    &.active,
+    &.disabled,
+    &[disabled] {
+      background-color: $brand-white;
+      border-color: $p100-grey;
+    }
+
+    &.active {
+      font-weight: bold;
+      border-color: $p200-grey;
+    }
+  }
+}
