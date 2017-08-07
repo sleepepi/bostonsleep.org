@@ -18,7 +18,9 @@
           %p 221 Longwood Avenue, Boston, MA 02115
           - if false
             %p Phone: 617.732.5859
-          %p Email: sredline@bwh.harvard.edu
+          %p
+            Email:
+            = mail_to "sredline@bwh.harvard.edu"
 
         .backdrop-regular
           %p
@@ -28,8 +30,12 @@
           %p Brigham and Women's Hospital
           %p Harvard Medical School
           %p 221 Longwood Avenue, Boston, MA 02115
-          %p Phone: 857.307.0338
-          %p E-mail: dmobley@bwh.harvard.edu
+          %p
+            Phone:
+            = link_to "857.307.0338", "tel:857.307.0338"
+          %p
+            E-mail:
+            = mail_to "dmobley@bwh.harvard.edu"
 
 
         .backdrop-white
