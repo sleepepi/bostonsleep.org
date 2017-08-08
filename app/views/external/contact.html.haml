@@ -11,16 +11,20 @@
           %p
             %strong For all inquiries regarding new projects
 
-          %p Dr. Susan Redline, MD, MPH, Director
-          %p Brigham Health Sleep Reading Center
-          %p Brigham and Women's Hospital
-          %p Harvard Medical School
-          %p 221 Longwood Avenue, Boston, MA 02115
-          - if false
-            %p Phone: 617.732.5859
           %p
-            Email:
-            = mail_to "sredline@bwh.harvard.edu"
+            Dr. Susan Redline, MD, MPH, Director
+            %br
+            %small Brigham Health Sleep Reading Center
+            %br
+            %small Brigham and Women's Hospital
+            %br
+            %small Harvard Medical School
+            %br
+            %small 221 Longwood Avenue, Boston, MA 02115
+            %br
+            %small
+              Email:
+              = mail_to "sredline@bwh.harvard.edu"
 
         .backdrop-regular
           %p
@@ -28,17 +32,22 @@
               For general inquiries regarding
               = src_abbr
               services
-          %p Dan Mobley
-          %p Brigham Health Sleep Reading Center
-          %p Brigham and Women's Hospital
-          %p Harvard Medical School
-          %p 221 Longwood Avenue, Boston, MA 02115
           %p
-            Phone:
-            = link_to "857.307.0338", "tel:857.307.0338"
-          %p
-            E-mail:
-            = mail_to "dmobley@bwh.harvard.edu"
+            Dan Mobley
+            %br
+            %small Brigham Health Sleep Reading Center
+            %br
+            %small Brigham and Women's Hospital
+            %br
+            %small 221 Longwood Avenue, Boston, MA 02115
+            %br
+            %small
+              Phone:
+              = link_to "857.307.0338", "tel:857.307.0338"
+            %br
+            %small
+              E-mail:
+              = mail_to "dmobley@bwh.harvard.edu"
 
 
         .backdrop-white

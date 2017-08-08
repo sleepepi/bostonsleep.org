@@ -12,7 +12,9 @@
           %p.lead
             As part of the Brigham and Women's Hospital Division of Sleep and
             Circadian Disorders, the
-            = src_abbr
+            Sleep Reading Center
+            = surround "(", ")" do
+              = src_abbr
             serves as a vibrant and productive
             research center for investigations related to sleep disorders and
             outcomes in large clinical studies.
@@ -39,6 +41,13 @@
               Recent
               = src_abbr
               Publications
+            %small
+              See a full list of publications on
+              - pubmed_url = "https://www.ncbi.nlm.nih.gov/pubmed/?term=redline+susan"
+              = link_to "PubMed", pubmed_url
+              = succeed "." do
+                = link_to pubmed_url do
+                  %i.fa.fa-external-link>
           %p
             The
             = src_abbr
@@ -124,6 +133,6 @@
 
         .backdrop-regular
           %p
-            = link_to "https://www.ncbi.nlm.nih.gov/pubmed/?term=redline+s%5Bau%5D+AND+brigham%5Bad%5D" do
-              See full list of publications
+            = link_to staff_path do
+              Our staff
               %i.fa.fa-caret-right

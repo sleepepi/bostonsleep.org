@@ -17,11 +17,16 @@
       .col-sm-10
         .backdrop-white
           %p.lead
-            The Brigham Health Sleep Reading Center provides a full suite of services
-            needed for obtaining high quality sleep data for large scale
-            clinical trials and cohort studies.
-        .backdrop-regular
-          Established by Susan Redline, MD, MPH in 1994, the Sleep Reading Center has analyzed more than 50,000 studies and is the premiere provider of a full suite of services that can be tailored to meet the needs of each study.
+            The Brigham Health Sleep Reading Center
+            = surround "(", ")" do
+              = src_abbr
+            provides a full suite of services needed for obtaining high quality
+            sleep data for large scale clinical trials and cohort studies.
+            Established by Susan Redline, MD, MPH in 1994, the
+            = src_abbr
+            has analyzed more than 50,000 studies and is the premiere provider
+            of a full suite of services that can be tailored to meet the needs
+            of each study.
         .backdrop-regular
           %p
             = link_to about_path do
