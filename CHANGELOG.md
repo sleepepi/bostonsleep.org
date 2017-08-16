@@ -8,6 +8,7 @@
   - Updated to pg 0.21.0
   - Updated to haml 5.0.2
   - Updated to bootstrap 4.0.0.beta
+  - Updated to simplecov 0.15.0
 
 ## 2.1.0 (June 9, 2017)
 
