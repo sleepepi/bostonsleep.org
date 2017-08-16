@@ -1,9 +1,9 @@
-%nav.navbar.fixed-top.navbar-toggleable-md.navbar-light.bg-faded
-  .container.container-xs-fix
-    %button.navbar-toggler.navbar-toggler-right{ type: "button", data: { toggle: "collapse", target: "#navbarSupportedContent" }, aria: { controls: "navbarSupportedContent", expanded: "false", label: "Toggle navigation" } }
-      %span.navbar-toggler-icon
+%nav.navbar.fixed-top.navbar-expand-lg.navbar-light.background-p100-grey
+  .container
     = link_to root_path, class: "navbar-brand" do
       Brigham Sleep
-    #navbarSupportedContent.collapse.navbar-collapse
+    %button.navbar-toggler{ type: "button", data: { toggle: "collapse", target: "#navbarNav" }, aria: { controls: "navbarNav", expanded: "false", label: "Toggle navigation" } }
+      %span.navbar-toggler-icon
+    #navbarNav.collapse.navbar-collapse
       %ul.navbar-nav.mr-auto
         = render "menu/item", title: "About", path: about_path
