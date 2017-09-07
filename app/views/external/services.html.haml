@@ -10,40 +10,49 @@
       .col-sm-10
         .backdrop-white
           %p.lead
-            The
-            Sleep Reading Center
+            The Sleep Reading Center
             = surround "(", ")" do
               = src_abbr
-            tailors our full service offerings to best meet the
-            specific needs of each study. We are the first and largest standing
-            research sleep reading center, and have vast experience with
-            overseeing studies.
+            tailors our full range of service offerings to best meet the
+            specific needs of each study. We are the first and largest research
+            sleep reading center with vast experience in study design and
+            oversight.
 
         .backdrop-regular
           %p
             The
             = src_abbr
-            offers a complete suite of services, including protocol
-            development, production of procedures and training manuals, on-site
-            and off-site training, and staff and equipment certification. The
+            offers a complete suite of services including the in-house
+            capability to create scalable and responsive website solutions for
+            data collection and reporting. The
             = src_abbr
-            has rigorous quality control and quality improvement processes
-            across each study's timeline. In addition, the
+            has rigorous quality control and quality improvement processes,
+            offers highly reliable scoring by research polysomnologists using
+            AASM standards, and can perform advanced signal processing for EEG,
+            ECG, and respiratory signals. The
             = src_abbr
-            has highly
-            reliable scoring by research polysomnologists using AASM standards,
-            advanced signal processing with EEG, ECG, and respiratory signals.
+            also provides sophisticated data management services and timely
+            reporting for each project.
+
+          %p
+            For studies with data sharing requirements, the
+            = src_abbr
+            can work with your study team to ensure that study documentation and
+            data collected will be ready to share with the research community.
             The
             = src_abbr
-            has sophisticated data management and timely reporting for
-            each project.
+            works closely with the
+            = link_to "National Sleep Research Resource", "https://sleepdata.org"
+            (NSRR), an NHLBI-funded resource designed to host and share data
+            from major sleep cohort studies and clinical trials. Uploading data
+            to the NSRR satisfies requirements of the NIH Data Sharing Policy.
 
           %p
             The
             = src_abbr
-            works closely with Sponsors to define the most appropriate
-            Scope of Work for each project. Specific processing and analytic
-            services include:
+            works with study sponsors to define the most appropriate scope of
+            work for each project. Specific processing and analytic services
+            include:
 
           %ul
             %li Protocol Development and Standardization
@@ -59,21 +68,26 @@
             %li Web-based data sharing and visualization
             %li Archival and repository creation
 
-        - if false
-          .backdrop-regular= image_tag "c3-920.png"
-
         .backdrop-regular
           %p
             %strong Polysomnography
           %ul
             %li On-site and off-site training
             %li Customized data collection protocol development
-            %li Thorough understanding of AASM scoring rules, terminology and technical specifications
-            %li Highly reliable scoring of full and limited-channel polysomnograms
-            %li Advanced signal processing to produce state-of-the-art quantitative metrics
+            %li
+              Thorough understanding of AASM scoring rules, terminology and
+              technical specifications
+            %li
+              Highly reliable scoring of full and limited-channel polysomnograms
+            %li
+              Advanced signal processing to produce state-of-the-art
+              quantitative metrics
+            %li Respiratory analysis of inspiratory flow limitation
             %li Customized reporting and dataset generation
             %li Urgent alert identification
-            %li Assistance with equipment selection, standardization and certification
+            %li
+              Assistance with equipment selection, standardization and
+              certification
 
         .backdrop-regular
           %p
@@ -84,6 +98,7 @@
             %li Generation of parametric and non-parametric to measure diurnal rhythms
             %li Reporting and dataset generation
             %li Assistance with equipment selection, standardization and certification
+            %li Rest-activity rhythm analysis with parametric and non-parametric approach
 
         .backdrop-regular
           %p
@@ -92,6 +107,23 @@
             %li Analysis of oximetry data collected via polysomnograms or standalone devices
             %li Urgent alert identification
             %li Data management and reporting
+
+        .backdrop-regular
+          %p
+            %strong EEG
+          %ul
+            %li Spectral analysis
+            %li Artifact rejection
+            %li Spindle detection
+            %li Cycle-specific analysis
+            %li Multiscale entropy
+
+        .backdrop-regular
+          %p
+            %strong ECG
+          %ul
+            %li Heart rate variability analysis in time and frequency domain
+            %li Multiscale entropy analysis
 
         .backdrop-regular
           %p
