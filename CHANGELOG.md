@@ -4,7 +4,7 @@
 - **General Changes**
   - Reworking layout of content
 - **Gem Changes**
-  - Updated to rails 5.1.3
+  - Updated to rails 5.1.4
   - Updated to pg 0.21.0
   - Updated to haml 5.0.2
   - Updated to bootstrap 4.0.0.beta
