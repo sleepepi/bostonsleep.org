@@ -36,8 +36,8 @@ class ExternalController < ApplicationController
     end
   end
 
-  # # GET /staff
-  # def staff
+  # # GET /personnel
+  # def personnel
   # end
 
   # # GET /thanks

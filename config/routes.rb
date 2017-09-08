@@ -7,10 +7,10 @@ Rails.application.routes.draw do
     get :about
     get :contact
     get :facility
+    get :personnel
     get :research
     get :services
     get :sitemap_xml, path: "sitemap.xml.gz"
-    get :staff
     get :submit_contact, to: redirect("contact")
     get :thanks
     get :version

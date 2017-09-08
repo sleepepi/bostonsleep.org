@@ -1,4 +1,4 @@
-- @title = "Staff"
+- @title = "Personnel"
 
 .page-box.last-slide.background-p50-grey
   = render "layouts/small_heading"
@@ -12,7 +12,9 @@
             %strong
               Leadership
           %p
-            Dr. Susan Redline, MD, MPH, Director
+            = succeed "," do
+              = link_to "Dr. Susan Redline", "https://connects.catalyst.harvard.edu/Profiles/display/Person/27634"
+            MD, MPH, Director
             %br
             %small Peter C. Farrell Professor of Sleep Medicine, Harvard Medical School
             %br
@@ -20,8 +22,11 @@
             %br
             %small Physician, Division of Pulmonary Medicine, Department of Medicine, Beth Israel Deaconess Medical Center
 
+        .backdrop-regular
           %p
-            Dr. Daniel Gottlieb, MD, MPH, Associate Director
+            = succeed "," do
+              = link_to "Dr. Daniel Gottlieb", "https://connects.catalyst.harvard.edu/Profiles/display/Person/89478"
+            MD, MPH, Associate Director (Polysomnography)
             %br
             %small Associate Professor of Medicine, Harvard Medical School
             %br
@@ -29,20 +34,22 @@
             %br
             %small Director, Sleep Disorders Center, VA Boston Healthcare System
 
-        .backdrop-regular
           %p
-            %strong
-              Faculty
-          %p
-            Dr. Shaun M. Purcell, PhD
+            = succeed "," do
+              = link_to "Dr. Shaun M. Purcell", "http://zzz.bwh.harvard.edu/index.html"
+            PhD, Co-Director, National Sleep Research Resource
             %br
             %small Purcell Lab in Sleep, Psychiatry, and Genetics, Department of Psychiatry, Brigham and Women's Hospital
             %br
             %small Associate Professor of Psychiatry and Genetics and Genomic Sciences, Icahn School of Medicine at Mount Sinai
           %p
-            Dr. Sara Mariani
+            = succeed "," do
+              = link_to "Dr. Sara Mariani", "https://connects.catalyst.harvard.edu/Profiles/display/Person/123085"
+            PhD, Associate Director (Actigraphy and Quantitative Analysis)
             %br
-            %small Instructor in Medicine
+            %small Instructor of Medicine, Division of Sleep Medicine, Harvard Medical School
+            %br
+            %small Division of Sleep and Circadian Disorders, Brigham and Women's Hospital
 
         .backdrop-regular
           %p

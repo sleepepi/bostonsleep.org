@@ -20,6 +20,6 @@ SitemapGenerator::Sitemap.create do
   add "/services", changefreq: "weekly", priority: 0.7
   add "/facility", changefreq: "weekly", priority: 0.7
   add "/research", changefreq: "weekly", priority: 0.7
-  add "/staff", changefreq: "weekly", priority: 0.7
+  add "/personnel", changefreq: "weekly", priority: 0.7
   add "/contact", changefreq: "monthly", priority: 0.3
 end
