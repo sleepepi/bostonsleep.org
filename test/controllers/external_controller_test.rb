@@ -39,8 +39,8 @@ class ExternalControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
-  test "should get staff" do
-    get staff_url
+  test "should get personnel" do
+    get personnel_url
     assert_response :success
   end
 
