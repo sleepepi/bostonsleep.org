@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
 json.version do
-  json.string BostonSleepOrg::VERSION::STRING
-  json.major BostonSleepOrg::VERSION::MAJOR
-  json.minor BostonSleepOrg::VERSION::MINOR
-  json.tiny BostonSleepOrg::VERSION::TINY
-  json.build BostonSleepOrg::VERSION::BUILD
+  json.string BostonSleep::VERSION::STRING
+  json.major BostonSleep::VERSION::MAJOR
+  json.minor BostonSleep::VERSION::MINOR
+  json.tiny BostonSleep::VERSION::TINY
+  json.build BostonSleep::VERSION::BUILD
 end

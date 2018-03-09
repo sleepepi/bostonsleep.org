@@ -54,14 +54,14 @@
           %p
             %strong Leave us a message.
 
-          = form_tag submit_contact_path, method: :post, class: "form-vertical" do
+          = form_with url: submit_contact_path, method: :post, local: true do |form|
             .row
               .col-sm-6.form-group
-                = text_field_tag "name", params[:name], class: "form-control", placeholder: "Name"
+                = form.text_field :name, value: params[:name], class: "form-control", placeholder: "Name", autocomplete: "off"
               .col-sm-6.form-group
-                = email_field_tag "email", params[:email], class: "form-control", placeholder: "Email"
-            = text_area_tag "comments", params[:comments], class: "form-control", placeholder: "Comment", rows: 5
+                = form.email_field :email, value: params[:email], class: "form-control", placeholder: "Email", autocomplete: "off"
+            = form.text_area :comments, value: params[:comments], class: "form-control", placeholder: "Comment", rows: 5
             %br
             .row
               .col-sm-12.form-group
-                %button.btn.btn-primary.pull-right{ type: "submit" } Send
+                = form.submit "Send", class: "btn btn-primary float-right"

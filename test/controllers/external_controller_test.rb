@@ -57,14 +57,14 @@ class ExternalControllerTest < ActionDispatch::IntegrationTest
   test "should get version as json" do
     get version_url(format: "json")
     version = JSON.parse(response.body)
-    assert_equal BostonSleepOrg::VERSION::STRING, version["version"]["string"]
-    assert_equal BostonSleepOrg::VERSION::MAJOR, version["version"]["major"]
-    assert_equal BostonSleepOrg::VERSION::MINOR, version["version"]["minor"]
-    assert_equal BostonSleepOrg::VERSION::TINY, version["version"]["tiny"]
-    if BostonSleepOrg::VERSION::BUILD.nil?
+    assert_equal BostonSleep::VERSION::STRING, version["version"]["string"]
+    assert_equal BostonSleep::VERSION::MAJOR, version["version"]["major"]
+    assert_equal BostonSleep::VERSION::MINOR, version["version"]["minor"]
+    assert_equal BostonSleep::VERSION::TINY, version["version"]["tiny"]
+    if BostonSleep::VERSION::BUILD.nil?
       assert_nil version["version"]["build"]
     else
-      assert_equal BostonSleepOrg::VERSION::BUILD, version["version"]["build"]
+      assert_equal BostonSleep::VERSION::BUILD, version["version"]["build"]
     end
     assert_response :success
   end

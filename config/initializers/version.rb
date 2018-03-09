@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module BostonSleepOrg
+module BostonSleep
   module VERSION #:nodoc:
     MAJOR = 3
     MINOR = 1

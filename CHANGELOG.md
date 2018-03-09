@@ -14,6 +14,9 @@
   - Updated to sitemap_generator 6.0.1
   - Updated to simplecov 0.15.1
 
+### Tests
+- Added system tests
+
 ## 3.0.0 (September 11, 2017)
 
 ### Enhancements
