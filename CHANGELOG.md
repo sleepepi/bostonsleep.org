@@ -10,6 +10,7 @@
   - Updated to haml 5.0.4
   - Updated to kaminari 1.1.1
   - Updated to sitemap_generator 6.0.1
+  - Updated to simplecov 0.15.1
 
 ## 3.0.0 (September 11, 2017)
 
