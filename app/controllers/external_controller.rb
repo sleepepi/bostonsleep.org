@@ -2,6 +2,8 @@
 
 # Displays publicly available pages.
 class ExternalController < ApplicationController
+  layout "layouts/full_page_no_header"
+
   # # GET /about
   # def about
   # end
@@ -11,7 +13,7 @@ class ExternalController < ApplicationController
   # end
 
   # # GET /
-  # def home
+  # def landing
   # end
 
   # # GET /facility

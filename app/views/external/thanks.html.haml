@@ -1,16 +1,17 @@
-.page-box.last-slide.background-p50-grey
+.page-box.last-box.page-box-no-padding.background-p50-grey
   = render "layouts/small_heading"
 
-  .container
-    .row
-      .col-sm-2.d-none.d-sm-block
-        = render "menu/left_menu"
-      .col-sm-10
-        .backdrop-white
-          %p.lead
-            Thanks for your message. We'll get back shortly!
-        .backdrop-regular
-          %p
-            = link_to about_path do
-              Learn more
-              %i.fa.fa-caret-right
+  .page-box-padding
+    .container
+      .row
+        .col-sm-2.d-none.d-sm-block
+          = render "menu/left_menu"
+        .col-sm-10
+          .backdrop-white
+            %p.lead
+              Thanks for your message. We'll get back shortly!
+          .backdrop-regular
+            %p
+              = link_to about_path do
+                Learn more
+                %i.fa.fa-caret-right

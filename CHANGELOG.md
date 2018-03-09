@@ -1,6 +1,8 @@
 ## 3.1.0
 
 ### Enhancements
+- **General Changes**
+  - Adjusted header on mobile devices
 - **Gem Changes**
   - Updated to Ruby 2.5.0
   - Updated `Gemfile` to `gems.rb`

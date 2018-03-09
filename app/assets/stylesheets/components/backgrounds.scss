@@ -6,8 +6,7 @@
   background-color: $p100-grey;
 }
 
-.background-fixed-image,
-.background-fixed-image-small {
+.background-fixed-image {
   background-image: asset-url("221_old.jpg");
   background-attachment: fixed;
   background-position: center;
@@ -15,11 +14,11 @@
   background-size: cover;
 }
 
-.background-fixed-image {
+.background-fixed-image-fixed-height {
   height: 500px;
 }
 
-.background-fixed-image-small {
+.background-fixed-image-fixed-height-small {
   height: 100px;
 }
 

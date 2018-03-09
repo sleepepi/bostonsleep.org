@@ -1,9 +1,10 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
-  root "external#home"
+  root "external#landing"
 
   scope module: :external do
+    get :landing
     get :about
     get :contact
     get :facility

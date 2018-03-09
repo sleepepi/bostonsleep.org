@@ -1,44 +1,45 @@
 - @title = "About"
 
-.page-box.last-slide.background-p50-grey
+.page-box.last-box.page-box-no-padding.background-p50-grey
   = render "layouts/small_heading"
 
-  .container
-    .row
-      .col-sm-2.d-none.d-sm-block
-        = render "menu/left_menu"
-      .col-sm-10
-        .backdrop-white
-          %p.lead
-            The primary mission of the
-            Sleep Reading Center
-            = surround "(", ")" do
-              = src_abbr
-            is to partner with research teams to
-            ensure that the highest quality sleep data are collected, analyzed
-            and reported in order to advance the understanding of sleep and
-            health.
-        .backdrop-regular
-          Since 1994, the
-          = src_abbr
-          has led all aspects of
-          sleep data acquisition and processing for numerous large-scale
-          observational studies and clinical trials for both adult and pediatric
-          study populations. The
-          = src_abbr
-          was the first major research PSG center
-          supporting large studies funded by the National Institutes of Health.
-          During the last 23 years, our team has developed rigorous approaches
-          for obtaining, processing, and scoring of polysomnograms in
-          multi-center studies; implemented methods for training, certification,
-          and quality improvement to achieve highly standardized, accurate, and
-          reliable data collection across multiple sites; and assisted with the
-          development of sophisticated informatics platforms to support
-          multi-site clinical research. As our portfolio of services has
-          expanded, we have successfully applied these approaches to our other
-          service offerings.
-        .backdrop-regular
-          %p
-            = link_to services_path do
-              Our services
-              %i.fa.fa-caret-right
+  .page-box-padding
+    .container
+      .row
+        .col-sm-2.d-none.d-sm-block
+          = render "menu/left_menu"
+        .col-sm-10
+          .backdrop-white
+            %p.lead
+              The primary mission of the
+              Sleep Reading Center
+              = surround "(", ")" do
+                = src_abbr
+              is to partner with research teams to
+              ensure that the highest quality sleep data are collected, analyzed
+              and reported in order to advance the understanding of sleep and
+              health.
+          .backdrop-regular
+            Since 1994, the
+            = src_abbr
+            has led all aspects of
+            sleep data acquisition and processing for numerous large-scale
+            observational studies and clinical trials for both adult and pediatric
+            study populations. The
+            = src_abbr
+            was the first major research PSG center
+            supporting large studies funded by the National Institutes of Health.
+            During the last 23 years, our team has developed rigorous approaches
+            for obtaining, processing, and scoring of polysomnograms in
+            multi-center studies; implemented methods for training, certification,
+            and quality improvement to achieve highly standardized, accurate, and
+            reliable data collection across multiple sites; and assisted with the
+            development of sophisticated informatics platforms to support
+            multi-site clinical research. As our portfolio of services has
+            expanded, we have successfully applied these approaches to our other
+            service offerings.
+          .backdrop-regular
+            %p
+              = link_to services_path do
+                Our services
+                %i.fa.fa-caret-right

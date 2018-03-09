@@ -4,9 +4,7 @@
     %meta{ charset: "utf-8" }
     %meta{ content: "IE=Edge,chrome=1", http: { equiv: "X-UA-Compatible" } }
     %meta{ name: "viewport", content: "width=device-width, initial-scale=1, shrink-to-fit=no" }
-    %meta{ name: "description", content: "Boston Sleep website." }
-    %meta{ name: "author", content: "Remo Mueller" }
-    %meta{ name: "keywords", content: "boston sleep, brigham health, sleep reading center, companies read sleep studies, harvard reading center, harvard medical school, places that read sleep studies, hospitals that read sleep studies, sleep study interpretation, sleep study reading center, sleep study reading center in Massachusetts" }
+    = render "layouts/meta/general"
     -# Don't cache any pages
     %meta{ name: "turbolinks-cache-control", content: "no-cache" }
     %title= [@title, ENV["website_name"]].compact.join(" - ").html_safe
@@ -16,8 +14,6 @@
     = javascript_include_tag "application", data: { turbolinks_track: "reload" }
     = javascript_tag "var root_url='#{request.script_name + '/'}';"
   %body#top.full-page{ class: yield(:body_class) }
-    - if false
-      #top-menu= render "layouts/menu"
     = render "layouts/flash_bar"
     = yield :header
     .container.body-content= yield

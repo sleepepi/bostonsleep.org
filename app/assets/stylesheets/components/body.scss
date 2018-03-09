@@ -6,12 +6,14 @@ html {
 body {
   &.full-page {
     margin-bottom: $footer-height;
-    padding-top: $header-height;
   }
 
   &.full-page-no-header {
     margin-bottom: $footer-height;
-    padding-top: 0;
+  }
+
+  &.full-page-no-header-no-footer {
+    margin-bottom: 0;
   }
 }
 
@@ -20,11 +22,9 @@ body {
   padding-top: 20px;
 }
 
-$p200-blue-rgba: rgba(144, 202, 249, .99);
-
 ::selection {
-  background-color: $p200-blue-rgba;
-  color: $p800-grey;
+  background-color: rgba($p200-blue, .99);
+  color: $body-color;
   text-shadow: none;
 }
 

@@ -1,99 +1,100 @@
 - @title = "Facility"
 
-.page-box.last-slide.background-p50-grey
+.page-box.last-box.page-box-no-padding.background-p50-grey
   = render "layouts/small_heading"
 
-  .container
-    .row
-      .col-sm-2.d-none.d-sm-block
-        = render "menu/left_menu"
-      .col-sm-10
-        .backdrop-white
-          %p.lead
-            The
-            = src_abbr
-            is located within the Division of Sleep and Circadian Disorders at
-            the Brigham and Women's Hospital, a primary teaching hospital of the
-            adjacent Harvard Medical School.
+  .page-box-padding
+    .container
+      .row
+        .col-sm-2.d-none.d-sm-block
+          = render "menu/left_menu"
+        .col-sm-10
+          .backdrop-white
+            %p.lead
+              The
+              = src_abbr
+              is located within the Division of Sleep and Circadian Disorders at
+              the Brigham and Women's Hospital, a primary teaching hospital of the
+              adjacent Harvard Medical School.
 
-        .backdrop-regular
-          %p
-            All research activities, including technical work and project
-            management, take place in the centrally located
-            = src_abbr
-            research facility that is designed to enhance the cohesion and
-            communication among project team members as well as promote smooth
-            and efficient operations. Data analyses are performed by highly
-            trained personnel using a variety of statistical software packages
-            including SAS and R.
+          .backdrop-regular
+            %p
+              All research activities, including technical work and project
+              management, take place in the centrally located
+              = src_abbr
+              research facility that is designed to enhance the cohesion and
+              communication among project team members as well as promote smooth
+              and efficient operations. Data analyses are performed by highly
+              trained personnel using a variety of statistical software packages
+              including SAS and R.
 
-        .backdrop-regular
-          %p
-            %strong Big Data Capabilities
-          %p
-            The
-            = src_abbr
-            maintains dedicated workstations for analysis of sleep data. The
-            systems are fully secured, and facilitate access to highly reliable
-            file storage and secure file transmission systems for receipt and
-            transmission of de-identified data. Partners Information Services
-            (IS), a division within Partner Healthcare Systems (PHS), manages
-            all data and voice communication networks as well as other core
-            infrastructure systems and applications across the Partners
-            environment with a budget of over $300M per annum. The PHS data
-            network provides 100 MB Ethernet connections to the desktop with 1
-            GB access layer connections to the core. When required, higher
-            bandwidth connections are available to the desktop. The network core
-            consists of redundant connections among 4 major datacenters located
-            in MGH Boston, Charlestown, BWH Longwood Medical Area, and Needham,
-            MA. Redundancy is maintained from all areas of the network to the
-            institution's Internet Service Provider.
+          .backdrop-regular
+            %p
+              %strong Big Data Capabilities
+            %p
+              The
+              = src_abbr
+              maintains dedicated workstations for analysis of sleep data. The
+              systems are fully secured, and facilitate access to highly reliable
+              file storage and secure file transmission systems for receipt and
+              transmission of de-identified data. Partners Information Services
+              (IS), a division within Partner Healthcare Systems (PHS), manages
+              all data and voice communication networks as well as other core
+              infrastructure systems and applications across the Partners
+              environment with a budget of over $300M per annum. The PHS data
+              network provides 100 MB Ethernet connections to the desktop with 1
+              GB access layer connections to the core. When required, higher
+              bandwidth connections are available to the desktop. The network core
+              consists of redundant connections among 4 major datacenters located
+              in MGH Boston, Charlestown, BWH Longwood Medical Area, and Needham,
+              MA. Redundancy is maintained from all areas of the network to the
+              institution's Internet Service Provider.
 
-        .backdrop-regular
-          %p
-            %strong Data Security
-          %p
-            All computer workstations are maintained and supported by Brigham
-            and Women's Hospital and Partners Corporation Information Systems.
-            All workstations have institutional level virus protection software,
-            are locked when not in use, and require a staff-specific user name
-            and password for logon. The
-            = src_abbr
-            maintains strict policies regarding safeguarding and adheres to
-            industry best practices for password management and user access
-            auditing. All work related to a specific project is saved within
-            secure network spaces accessible only to team members authorized to
-            work on the study. This network is accessible only by
-            = src_abbr
-            staff members who are granted permission by the
-            = src_abbr
-            Administrative Director. Institution-wide backup of all server data
-            is performed nightly, and
-            = src_abbr
-            project-specific data are additionally stored on secured servers
-            with remote redundant back-up protection. The Partners Corporation
-            operates under a full compendium of policies related to Emergency
-            Management and Disaster Recovery policies that address data recovery
-            and upstart after any unexpected and unforeseen catastrophe. PHS has
-            necessary physical and operational securities in place for all
-            operational controls to meet or exceed Federal and State security
-            and privacy regulations. PHS restricts, monitors, and controls
-            access to systems by authorized staff who additionally have signed
-            confidentiality and ethical pledges to safeguard data.
+          .backdrop-regular
+            %p
+              %strong Data Security
+            %p
+              All computer workstations are maintained and supported by Brigham
+              and Women's Hospital and Partners Corporation Information Systems.
+              All workstations have institutional level virus protection software,
+              are locked when not in use, and require a staff-specific user name
+              and password for logon. The
+              = src_abbr
+              maintains strict policies regarding safeguarding and adheres to
+              industry best practices for password management and user access
+              auditing. All work related to a specific project is saved within
+              secure network spaces accessible only to team members authorized to
+              work on the study. This network is accessible only by
+              = src_abbr
+              staff members who are granted permission by the
+              = src_abbr
+              Administrative Director. Institution-wide backup of all server data
+              is performed nightly, and
+              = src_abbr
+              project-specific data are additionally stored on secured servers
+              with remote redundant back-up protection. The Partners Corporation
+              operates under a full compendium of policies related to Emergency
+              Management and Disaster Recovery policies that address data recovery
+              and upstart after any unexpected and unforeseen catastrophe. PHS has
+              necessary physical and operational securities in place for all
+              operational controls to meet or exceed Federal and State security
+              and privacy regulations. PHS restricts, monitors, and controls
+              access to systems by authorized staff who additionally have signed
+              confidentiality and ethical pledges to safeguard data.
 
-        .backdrop-regular
-          %p
-            %strong Fully Supported by Partners Infrastructure
-          %p
-            Partners Information Services (IS) manages all data and voice
-            communication networks as well as other core infrastructure systems
-            and applications across the Partners environment. Cloud-based,
-            virtual services are available to researchers and are maintained
-            using enterprise-class IT systems within the Partners secure data
-            center and within the Partners network.
+          .backdrop-regular
+            %p
+              %strong Fully Supported by Partners Infrastructure
+            %p
+              Partners Information Services (IS) manages all data and voice
+              communication networks as well as other core infrastructure systems
+              and applications across the Partners environment. Cloud-based,
+              virtual services are available to researchers and are maintained
+              using enterprise-class IT systems within the Partners secure data
+              center and within the Partners network.
 
-        .backdrop-regular
-          %p
-            = link_to research_path do
-              Our research
-              %i.fa.fa-caret-right
+          .backdrop-regular
+            %p
+              = link_to research_path do
+                Our research
+                %i.fa.fa-caret-right

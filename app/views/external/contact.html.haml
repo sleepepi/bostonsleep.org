@@ -1,66 +1,68 @@
 - @title = "Contact"
 
-.page-box.last-slide.background-p50-grey
+.page-box.last-box.page-box-no-padding.background-p50-grey
   = render "layouts/small_heading"
-  .container
-    .row
-      .col-sm-2.d-none.d-sm-block
-        = render "menu/left_menu"
-      .col-sm-10
-        .backdrop-regular
-          %p
-            %strong For all inquiries regarding new projects
 
-          %p
-            Dr. Susan Redline, MD, MPH, Director
-            %br
-            %small Brigham Health Sleep Reading Center
-            %br
-            %small Brigham and Women's Hospital
-            %br
-            %small Harvard Medical School
-            %br
-            %small 221 Longwood Avenue, Boston, MA 02115
-            %br
-            %small
-              Email:
-              = mail_to "sredline@bwh.harvard.edu"
+  .page-box-padding
+    .container
+      .row
+        .col-sm-2.d-none.d-sm-block
+          = render "menu/left_menu"
+        .col-sm-10
+          .backdrop-regular
+            %p
+              %strong For all inquiries regarding new projects
 
-        .backdrop-regular
-          %p
-            %strong
-              For general inquiries regarding
-              = src_abbr
-              services
-          %p
-            Dan Mobley
-            %br
-            %small Brigham Health Sleep Reading Center
-            %br
-            %small Brigham and Women's Hospital
-            %br
-            %small 221 Longwood Avenue, Boston, MA 02115
-            %br
-            %small
-              Phone:
-              = link_to "857.307.0338", "tel:857.307.0338"
-            %br
-            %small
-              E-mail:
-              = mail_to "dmobley@bwh.harvard.edu"
+            %p
+              Dr. Susan Redline, MD, MPH, Director
+              %br
+              %small Brigham Health Sleep Reading Center
+              %br
+              %small Brigham and Women's Hospital
+              %br
+              %small Harvard Medical School
+              %br
+              %small 221 Longwood Avenue, Boston, MA 02115
+              %br
+              %small
+                Email:
+                = mail_to "sredline@bwh.harvard.edu"
 
-        .backdrop-white
-          %p
-            %strong Leave us a message.
+          .backdrop-regular
+            %p
+              %strong
+                For general inquiries regarding
+                = src_abbr
+                services
+            %p
+              Dan Mobley
+              %br
+              %small Brigham Health Sleep Reading Center
+              %br
+              %small Brigham and Women's Hospital
+              %br
+              %small 221 Longwood Avenue, Boston, MA 02115
+              %br
+              %small
+                Phone:
+                = link_to "857.307.0338", "tel:857.307.0338"
+              %br
+              %small
+                E-mail:
+                = mail_to "dmobley@bwh.harvard.edu"
 
-          = form_with url: submit_contact_path, method: :post, local: true do |form|
-            .row
-              .col-sm-6.form-group
-                = form.text_field :name, value: params[:name], class: "form-control", placeholder: "Name", autocomplete: "off"
-              .col-sm-6.form-group
-                = form.email_field :email, value: params[:email], class: "form-control", placeholder: "Email", autocomplete: "off"
-            .form-group
-              = form.text_area :comments, value: params[:comments], class: "form-control", placeholder: "Comment", rows: 5
-            .form-group.row.mt-4.mb-0
-              .col-sm-12
-                = form.submit "Send", class: "btn btn-primary float-right"
+          .backdrop-white
+            %p
+              %strong Leave us a message.
+
+            = form_with url: submit_contact_path, method: :post, local: true do |form|
+              .row
+                .col-sm-6.form-group
+                  = form.text_field :name, value: params[:name], class: "form-control", placeholder: "Name", autocomplete: "off"
+                .col-sm-6.form-group
+                  = form.email_field :email, value: params[:email], class: "form-control", placeholder: "Email", autocomplete: "off"
+              .form-group
+                = form.text_area :comments, value: params[:comments], class: "form-control", placeholder: "Comment", rows: 5
+              .form-group.row.mt-4.mb-0
+                .col-sm-12
+                  = form.submit "Send", class: "btn btn-primary float-right"
