@@ -1,5 +1,9 @@
 ## 3.1.0
 
+### Enhancements
+- **Gem Changes**
+  - Updated `Gemfile` to `gems.rb`
+
 ## 3.0.0 (September 11, 2017)
 
 ### Enhancements
