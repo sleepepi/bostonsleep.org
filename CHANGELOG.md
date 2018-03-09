@@ -4,6 +4,7 @@
 - **Gem Changes**
   - Updated `Gemfile` to `gems.rb`
   - Updated to rails 5.2.0.rc1
+  - Updated to pg 1.0.0
 
 ## 3.0.0 (September 11, 2017)
 
