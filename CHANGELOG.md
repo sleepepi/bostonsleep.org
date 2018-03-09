@@ -1,4 +1,4 @@
-## 3.1.0
+## 3.1.0 (March 9, 2018)
 
 ### Enhancements
 - **General Changes**
