@@ -1,13 +1,14 @@
+// Theme colors and variable definitions.
 @import 'themes/default';
-
-// Bootstrap and general variable definitions
 @import 'variables/all';
 
 // Core Bootstrap styles
 @import 'bootstrap';
+
+// Font Awesome icons
 @import 'font-awesome';
 
-// App Mixins
+// App mixins
 @import 'mixins/all';
 
 // App specific styles
