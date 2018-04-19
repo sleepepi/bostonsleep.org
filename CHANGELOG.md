@@ -6,6 +6,7 @@
   - Updated to rails 5.2.0
   - Updated to bootstrap 4.1.0
   - Updated to devise 4.4.3
+  - Updated to simplecov 0.16.1
 
 ## 3.1.0 (March 9, 2018)
 
