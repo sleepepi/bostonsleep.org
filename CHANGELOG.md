@@ -1,5 +1,9 @@
 ## 3.2.0
 
+### Enhancements
+- **Gem Changes**
+  - Updated to ruby 2.5.1
+
 ## 3.1.0 (March 9, 2018)
 
 ### Enhancements
