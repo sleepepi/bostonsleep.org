@@ -1,4 +1,4 @@
-## 3.2.0
+## 3.2.0 (April 19, 2018)
 
 ### Enhancements
 - **Gem Changes**
