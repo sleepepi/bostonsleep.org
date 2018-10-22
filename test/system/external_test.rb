@@ -19,7 +19,9 @@ class ExternalTest < ApplicationSystemTestCase
   test "visit services page" do
     visit services_url
     screenshot("visit-services-page")
-    page.execute_script("window.scrollBy(0, $(\"body\").height());")
+    scroll_down
+    screenshot("visit-services-page")
+    scroll_down
     screenshot("visit-services-page")
     assert_selector "h1", text: "Brigham Health Sleep Reading Center"
   end
@@ -27,7 +29,7 @@ class ExternalTest < ApplicationSystemTestCase
   test "visit facility page" do
     visit facility_url
     screenshot("visit-facility-page")
-    page.execute_script("window.scrollBy(0, $(\"body\").height());")
+    scroll_down
     screenshot("visit-facility-page")
     assert_selector "h1", text: "Brigham Health Sleep Reading Center"
   end
@@ -35,7 +37,11 @@ class ExternalTest < ApplicationSystemTestCase
   test "visit research page" do
     visit research_url
     screenshot("visit-research-page")
-    page.execute_script("window.scrollBy(0, $(\"body\").height());")
+    scroll_down
+    screenshot("visit-research-page")
+    scroll_down
+    screenshot("visit-research-page")
+    scroll_down
     screenshot("visit-research-page")
     assert_selector "h1", text: "Brigham Health Sleep Reading Center"
   end
