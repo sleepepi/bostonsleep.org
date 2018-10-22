@@ -7,7 +7,7 @@ class ExternalTest < ApplicationSystemTestCase
   test "visit landing page" do
     visit root_url
     screenshot("visit-landing-page")
-    assert_selector "h1", text: "Brigham Health Sleep Reading Center"
+    assert_selector "h1", text: "Brigham Health\nSleep Reading Center"
   end
 
   test "visit about page" do
