@@ -3,6 +3,7 @@
 ### Enhancements
 - **General Changes**
   - Add updated Privacy Policy
+  - Update framework files to resemble Rails 5.2 defaults more closely
 - **Gem Changes**
   - Update to rails 5.2.1
   - Update to pg 1.1.3
