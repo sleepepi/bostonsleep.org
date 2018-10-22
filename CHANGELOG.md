@@ -6,6 +6,7 @@
   - Update framework files to resemble Rails 5.2 defaults more closely
   - Remove Google Analytics
 - **Gem Changes**
+  - Update to ruby 2.5.3
   - Update to rails 5.2.1
   - Update to pg 1.1.3
   - Update to bootstrap 4.1.3
