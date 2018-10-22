@@ -8,6 +8,7 @@
   - Update to carrierwave 1.2.3
   - Update to devise 4.5.0
   - Update to font-awesome-sass 5.4.1
+  - Update to jquery-rails 4.3.3
 
 ## 3.2.0 (April 19, 2018)
 
