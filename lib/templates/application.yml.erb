@@ -3,8 +3,3 @@ website_name:         "<%= print "Enter Website Name: "; gets.chomp %>"
 support_email:        "<%= print "Enter support email address: "; ga = gets.chomp; ga %>"
 
 emails_enabled:       "true"
-
-devise_pepper:        "<%= SecureRandom.hex(64) %>"
-website_secret:       "<%= SecureRandom.hex(64) %>"
-
-google_analytics:     "<%= print "Enter Google Analytics Tracking ID: "; gets.chomp %>"
