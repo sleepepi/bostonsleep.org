@@ -46,8 +46,7 @@
                 - pubmed_url = "https://www.ncbi.nlm.nih.gov/pubmed/?term=redline+susan"
                 = link_to "PubMed", pubmed_url
                 = succeed "." do
-                  = link_to pubmed_url do
-                    %i.fa.fa-external-link>
+                  = link_to icon("fas", "external-link-alt"), pubmed_url
             %p
               The
               = src_abbr
@@ -135,4 +134,4 @@
             %p
               = link_to personnel_path do
                 Our personnel
-                %i.fa.fa-caret-right
+                = icon("fas", "caret-right")
