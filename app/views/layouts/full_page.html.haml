@@ -10,12 +10,14 @@
     %title= [@title, ENV["website_name"]].compact.join(" - ").html_safe
     = favicon_link_tag
     = csrf_meta_tags
+    = csp_meta_tag
+    = action_cable_meta_tag
     = stylesheet_link_tag "application", media: "all", data: { turbolinks_track: "reload" }
     = javascript_include_tag "application", data: { turbolinks_track: "reload" }
-    = javascript_tag "var root_url='#{request.script_name + '/'}';"
-  %body#top.full-page{ class: yield(:body_class) }
+  %body#top.full-page.theme-bg{ class: "theme-#{@theme.presence || "default"}-bg", data: { theme: @theme } }
     #top-menu= render "layouts/menu"
-    = render "layouts/flash_bar"
+    = render "layouts/features/service_announcement", container: @container.presence
+    = render "layouts/features/flash_bar"
     = yield :header
     = yield
     = yield :footer

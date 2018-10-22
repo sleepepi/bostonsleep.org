@@ -1,6 +1,8 @@
 ## 4.0.0
 
 ### Enhancements
+- **General Changes**
+  - Add updated Privacy Policy
 - **Gem Changes**
   - Update to rails 5.2.1
   - Update to pg 1.1.3

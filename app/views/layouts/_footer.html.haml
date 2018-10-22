@@ -1,15 +1,23 @@
 .footer-container
   .container
     .footer
-      .nowrap
-        &copy;
-        = Time.zone.today.year
-        .d-inline.d-sm-none= link_to "SRC", about_path
-        .d-none.d-sm-inline
-          Sleep Reading Center
-          &nbsp;
-          = link_to "About", about_path
-        .float-right{ style: "margin-top: -14px;" }
-          = link_to "Questions?", contact_path
-          &nbsp;
-          = link_to image_tag("logos/bwh-logo.png", size: "48x56"), "http://www.brighamandwomens.org/"
+      .nowrap.row
+        .col
+          &copy;
+          = Time.zone.today.year
+          .d-inline.d-md-none= link_to "SRC", about_path
+          .d-none.d-md-inline
+            Sleep Reading Center
+            &nbsp;
+            = link_to "About", about_path
+
+        .col.text-center.d-none.d-sm-block
+          - if false
+            %small.px-2= link_to "Terms", terms_and_conditions_path
+          %small.px-2= link_to "Privacy", privacy_policy_path
+
+        .col.text-right
+          %div{ style: "margin-top: -14px;" }
+            = link_to "Questions?", contact_path
+            &nbsp;
+            = link_to image_tag("logos/bwh-logo.png", size: "48x56"), "http://www.brighamandwomens.org/"

@@ -13,6 +13,7 @@ Rails.application.routes.draw do
     get :services
     get :sitemap_xml, path: "sitemap.xml.gz"
     get :thanks
+    get :privacy_policy, path: "privacy-policy"
     get :version
     post :submit_contact, path: "contact"
   end

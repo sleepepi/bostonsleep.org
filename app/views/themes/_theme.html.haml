@@ -1,0 +1,4 @@
+- if params[:theme].in?(BostonSleep::THEMES.collect(&:second))
+  - @theme = params[:theme]
+- else
+  - @theme = "default"
