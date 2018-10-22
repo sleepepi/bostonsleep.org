@@ -1,6 +1,6 @@
 # These functions get called on initial page visit and on turbolink page changes
 @turbolinksReady = ->
-  bReady()
+  false
 
 # These functions only get called on the initial page visit (no turbolinks).
 # Browsers that don't support turbolinks will initialize all functions in
@@ -12,5 +12,5 @@
 
 $(document).ready(initialLoadReady)
 $(document)
-  .on('turbolinks:load', turbolinksReady)
-  .on('click', '[data-object~="suppress-click"]', -> false)
+  .on("turbolinks:load", turbolinksReady)
+  .on("click", "[data-object~=suppress-click]", -> false)
