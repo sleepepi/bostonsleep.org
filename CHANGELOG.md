@@ -1,6 +1,8 @@
 ## 5.0.0
 
 ### Enhancements
+- **General Changes**
+  - Update list of personnel
 - **Gem Changes**
   - Update to ruby 2.6.1
   - Update to rails 6.0.0.beta1
