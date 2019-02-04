@@ -1,6 +1,6 @@
 # Boston Sleep
 
-[![Build Status](https://travis-ci.org/sleepepi/bostonsleep.org.svg?branch=master)](https://travis-ci.org/sleepepi/bostonsleep.org)
+[![Build Status](https://travis-ci.com/sleepepi/bostonsleep.org.svg?branch=master)](https://travis-ci.com/sleepepi/bostonsleep.org)
 [![Code Climate](https://codeclimate.com/github/sleepepi/bostonsleep.org/badges/gpa.svg)](https://codeclimate.com/github/sleepepi/bostonsleep.org)
 
 The application that runs https://bostonsleep.org. Using Rails 5.2+ and Ruby 2.6+.
