@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# rubocop:disable Layout/ExtraSpacing
 source "https://rubygems.org"
 
 gem "rails",                      "6.0.0.beta1"
@@ -43,3 +44,4 @@ group :test do
   gem "selenium-webdriver"
   gem "simplecov",                "~> 0.16.1", require: false
 end
+# rubocop:enable Layout/ExtraSpacing
