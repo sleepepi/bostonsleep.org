@@ -1,5 +1,9 @@
 ## 6.0.0
 
+### Enhancements
+- **Gem Changes**
+  - Update to devise 4.6.1
+
 ## 5.0.0 (February 4, 2019)
 
 ### Enhancements
