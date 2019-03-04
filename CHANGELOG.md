@@ -1,4 +1,4 @@
-## 6.0.0
+## 6.0.0 (March 4, 2019)
 
 ### Enhancements
 - **Gem Changes**
