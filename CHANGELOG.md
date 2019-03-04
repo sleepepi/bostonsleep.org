@@ -2,6 +2,7 @@
 
 ### Enhancements
 - **Gem Changes**
+  - Update to bootstrap 4.3.1
   - Update to devise 4.6.1
 
 ## 5.0.0 (February 4, 2019)
