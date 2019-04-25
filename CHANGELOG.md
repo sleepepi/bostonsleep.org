@@ -1,5 +1,9 @@
 ## 7.0.0
 
+### Enhancements
+- **Gem Changes**
+  - Update to rails 6.0.0.beta3
+
 ## 6.0.0 (March 4, 2019)
 
 ### Enhancements
