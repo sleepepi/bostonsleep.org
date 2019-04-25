@@ -3,7 +3,7 @@
 # rubocop:disable Layout/ExtraSpacing
 source "https://rubygems.org"
 
-gem "rails",                      "6.0.0.beta2"
+gem "rails",                      "6.0.0.beta3"
 
 # Database Adapter
 gem "pg",                         "1.1.4"
