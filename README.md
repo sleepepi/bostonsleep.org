@@ -14,7 +14,7 @@ Edit Cron Jobs `sudo crontab -e` to run the tasks
 
 ```
 SHELL=/bin/bash
-0 1 * * * source /etc/profile.d/rvm.sh && cd /var/www/bostonsleep.org && rvm 2.6.1 && rails sitemap:refresh RAILS_ENV=production
+0 1 * * * source /etc/profile.d/rvm.sh && cd /var/www/bostonsleep.org && rvm 2.6.3 && rails sitemap:refresh RAILS_ENV=production
 ```
 
 ## License
