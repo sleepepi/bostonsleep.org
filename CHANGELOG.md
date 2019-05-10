@@ -1,4 +1,4 @@
-## 7.0.0
+## 7.0.0 (May 10, 2019)
 
 ### Enhancements
 - **Gem Changes**
