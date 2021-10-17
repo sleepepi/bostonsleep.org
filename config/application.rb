@@ -12,7 +12,7 @@ module BostonSleep
   # Provides framework for the bostonsleep.org.
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
-    config.load_defaults 6.0
+    config.load_defaults 6.1
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration can go into files in config/initializers
@@ -22,6 +22,12 @@ module BostonSleep
     # Set Time.zone default to the specified zone and make Active Record auto-convert to this zone.
     # Run "rails time:zones" for a list of tasks for finding time zone names. Default is UTC.
     config.time_zone = "Eastern Time (US & Canada)"
+
+    # `form_with` forms are no longer remote by default in Rails 6.1. The
+    # following line re-enables the remote form functionality. Upgrading would
+    # require all remote forms to specify `local: false`.
+    # https://discuss.rubyonrails.org/t/rails-6-1-remote-forms-are-no-longer-default/76912
+    config.action_view.form_with_generates_remote_forms = true
 
     # Ignores custom error DOM elements created by Rails.
     config.action_view.field_error_proc = proc { |html_tag, _instance| html_tag }
