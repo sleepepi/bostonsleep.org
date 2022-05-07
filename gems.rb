@@ -17,6 +17,9 @@ gem "figaro",                     "~> 1.2.0"
 gem "font-awesome-sass",          "~> 5.15.1"
 gem "haml",                       "~> 5.2.2"
 gem "kaminari",                   "~> 1.2.1"
+gem "net-imap",                   require: false
+gem "net-pop",                    require: false
+gem "net-smtp",                   require: false
 gem "redcarpet",                  "~> 3.5.1"
 gem "sitemap_generator",          "~> 6.0.2"
 
